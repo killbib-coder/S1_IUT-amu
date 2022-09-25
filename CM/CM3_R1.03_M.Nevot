@@ -1,0 +1,57 @@
+Intro. syst. exploit.
+
+Author: Martin Nevot
+Website: https://www.mickael-martin-nevot.com
+
+Intro. aux SE et leur fonctionnement:
+	## Syst. d'exploit. et shell
+https://www.mickael-martin-nevot.com/univ-amu/iut/but-informatique/introduction-aux-systemes-d-exploitation-et-a-leur-fonctionnement/s42-cm1-systemes-d-exploitation-et-shell.pdf
+
+Chaque diapo s'inscrit dans une des 4 catégories (voir diapo 3/25)
+Redirection de sorti ls > file (affiche rien et l'incrit dans le fichier donné)
+	> : écrase
+	>> : ajoute
+	2>/2>> : erreurs 
+	&>/&>> : tout
+	| : pipe = canal de communication 
+		ex: ls -l | grep ... | less
+	alias cration de commande
+		ex: alias la='ls-A'
+	; : lancement de séquences de commandes
+	ls == /bin/ls pck l'alias ls peut être modifié (virus, etc...)
+
+PID = Process Identiant  							fork = cloner
+PPID = parent PID									deamons = pas de contrôle par l'utilisateur
+bg = background (CTRL+Z) != fg = foreground 		xterm & = lancer en arrière plan
+jobs = process en arrière plan 						kill = envoyer un signal
+top = afficher les process en tmps réel				term = demande d'arrêt
+Trim = virer les espaces et indentations
+
+Gestion données persistante (voir diapo 8)
+	
+	head = afficher début
+	tail =    //    fin
+	tail -f = afficher en temp réel
+	diff = différence entre deux fichiers
+	grep = recheche dans fichier (ps -aux | grep firefox)
+	sed = éditer texte sans interface
+
+absolut = tjr vrai, ne varie pas
+Filtres fichier (diapo 11/25)
+Expression rationnelles (diapo 12/25 - 14/25)
+	exercice: diapo 13/25
+
+
+
+Gestion des communications: (diapo 15/25)
+	X = tout ce qui n'est pas graphique
+Gestion de la sécurité: (diapo 17/25)
+	whoami = afficher nom user
+	unmask = définir les droits par défauts
+	id = afficher UID, GID
+	finger = afficher données user
+	groups = afficher grp d'un user
+Variable d'environnement: (voir 19/25)
+	$HOME => $: pour récupérer la valeur
+
+END

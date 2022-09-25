@@ -1,0 +1,239 @@
+Exercice1:
+fonction SaisirEntierSupX ( Invite : in string, 
+                            erreur : in string, 
+                            X : in entier_naturel ) renvoie entier_naturel
+debut
+    declarer N : entier;
+    boucle
+        afficher(Invite);
+        saisir(N);
+        si (N > X) sortie;
+        afficher(erreur);
+        ligne_suivante;
+    fboucle
+    renvoie N;
+fin
+algorithme testSaisir 
+debut
+    declarer Z : entier;
+    afficher("Entre la somme : ");
+    saisir(Z);
+    N <- SaisirEntierSupX("Entrer un nombre","Plus grand que",Z);
+    afficher("Nombre saisie : ",N);
+fin 
+
+
+Exercice2:
+fonction find (Val : in entier, tabInt : in tableau_de entier) renvoie entier_naturel;
+procedure genereTabInt (tabInt : out tableau_de entier , n : in entier_naturel);
+
+procedure genereTabInt (tabInt : out tableau_de entier , n : in entier_naturel)
+debut
+	declarer tabInt : tableau_de n entier;
+	redimensioner(tabInt, n);
+	pour (i variant_de 0 a n-1)
+	faire
+		afficher("saisir un element");
+		saisir(tabInt[i]);
+	ffaire
+fin
+fonction find (Val : in entier, tabInt : in tableau_de entier) renvoie entier_naturel
+debut
+    pour ( i variant_de 0 a taille(tabInt)-1)
+    faire
+        si (tabInt[i] vaut Val)
+            renvoie i;
+        fsi
+    ffaire
+    //renvoie 0;
+fin
+algorithme exercice2
+debut
+    declarer Val, Occurence : entier;
+    declarer N : entier_naturel;
+    afficher("Saisir taille tableau : ");
+    saisir(N);
+    declarer tabInt : tableau_de N entier;
+    afficher("Saisir la valeur a chercher : ");
+    saisir(Val);
+    tabInt <- genereTabInt(N);
+    Occurence <- find(Val,tabInt);
+    afficher(Occurence);
+fin
+
+
+Exercice3:
+fonction find2 (Val : in entier, tabInt : in tableau_de entier) renvoie entier_naturel;
+
+fonction find2 (Val : in entier, tabInt : in tableau_de entier) renvoie entier_naturel
+debut
+    pour ( i variant_de 0 a taille(tabInt)-1)
+    faire
+        si (tabInt[i] vaut Val)
+            renvoie i;
+        fsi
+    ffaire
+    renvoie taille(tabInt);
+fin
+algorithme exercice3
+debut
+    declarer Val, Resultat : entier;
+    declarer N : entier_naturel;
+    afficher("Saisir taille tableau : ");
+    saisir(N);
+    declarer tabInt : tableau_de N entier;
+    afficher("Saisir la valeur a chercher : ");
+    saisir(Val);
+    tabInt <- genereTabInt(N);
+    Resultat <- find(Val,tabInt);
+    afficher(Resultat);
+fin
+
+
+Exercice4:
+fonction find3 (Val : in entier, tabInt : in tableau_de entier) renvoie entier_naturel;
+
+fonction find3 (Val : in entier, tabInt : in tableau_de entier) renvoie entier_naturel
+debut
+    redimensioner(tabInt,taille(tabInt)+1);
+    tabInt[taille(tabInt)-1] <- Val;
+    pour ( i variant_de 0 a taille(tabInt)-2)
+    faire
+        si (tabInt[i] vaut Val)
+            renvoie i;
+        fsi
+    ffaire
+    redimensioner(tabInt, taille(tabInt)-1);
+    renvoie taille(tabInt);
+fin
+algorithme exercice4
+debut
+    declarer Val, Resultat : entier;
+    declarer N : entier_naturel;
+    afficher("Saisir taille tableau : ");
+    saisir(N);
+    declarer tabInt : tableau_de N entier;
+    afficher("Saisir la valeur a chercher : ");
+    saisir(Val);
+    tabInt <- genereTabInt(N);
+    Resultat <- find(Val,tabInt);
+    si (Occurence vaut taille(tabInt))
+        afficher("pas de le tableau");
+        afficher(Resultat);
+    sinon
+        afficher(Resultat);
+    fsi
+fin
+
+
+Exercice5:
+fonction genereTabIntAleatoireSansRedondance( N : in entier_naturel, M : in entier_naturel ) renvoie tableau_de entier;
+
+fonction genereTabIntAleatoireSansRedondance( N : in entier_naturel, M : in entier_naturel ) renvoie tableau_de entier
+debut
+    declarer tabInt : tableau_de N entier;
+    declarer nb : entier_naturel;
+    declarer vAleatoire : entier;
+    nb <- 0;
+    pour ( i variant_de 0 a N-1)
+    faire
+        repeter
+            vAleatoire <- rand(1,M);
+        tant_que (find3(tabInt,vAleatoire) ne_vaut_pas taille(tabInt))
+        tabInt[nb] <- vAleatoire;
+    ffaire
+    renvoie tabInt;
+fin
+algorithme testGenereTabIntAleatoireSansRedondance
+debut
+    declarer N, M : entier_naturel;
+    afficher("Saisir taille tableau : ");
+    saisir(N);
+    declarer tabInt : tableau_de N entier;
+    afficher("Saisir M : ");
+    saisir(M);
+    tabInt <- genereTabIntAleatoireSansRedondance(N,M);
+    pour (i variant_de 1 a taille(tabInt))
+    faire
+        si(find(tabInt, tabInt[i]) ne_vaut_pas taille(tabInt))
+            afficher("Il y a une erreur");
+        fsi
+    ffaire
+    afficher("Il est des redondence");
+fin
+
+
+Exercice6:
+fonction genereTabIntAleatoireSansRedondance2( N : in entier_naturel, M : in entier_naturel ) renvoie tableau_de entier;
+
+fonction genereTabIntAleatoireSansRedondance2( N : in entier_naturel, M : in entier_naturel ) renvoie tableau_de entier
+debut
+    declarer tabInt : tableau_de N entier;
+    declarer nb : entier_naturel;
+    declarer vAleatoire : entier;
+    nb <- 0;
+    tant_que (nb<N)
+    faire
+        vAleatoire <- rand (1,M);
+        si (find3(tabInt,vAleatoire) vaut taille(tabInt))
+            tabInt[nb] <- vAleatoire;
+            nb <- nb + 1;
+        fsi
+    ffaire
+    renvoie tabInt;
+fin
+algorithme testGenereTabIntAleatoireSansRedondance2
+debut
+    declarer N, M : entier_naturel;
+    afficher("Saisir taille tableau : ");
+    saisir(N);
+    declarer tabInt : tableau_de N entier;
+    afficher("Saisir M : ");
+    saisir(M);
+    tabInt <- genereTabIntAleatoireSansRedondance(N,M);
+    pour (i variant_de 1 a taille(tabInt))
+    faire
+        si(find(tabInt, tabInt[i]) ne_vaut_pas taille(tabInt))
+            afficher("Il y a une erreur");
+        fsi
+    ffaire
+    afficher("Il est des redondence");
+fin
+
+
+Exercice7:
+fonction genereTabIntAleatoireSansRedondance3( N : in entier_naturel) renvoie tableau_de entier;
+
+fonction genereTabIntAleatoireSansRedondance3( N : in entier_naturel) renvoie tableau_de entier
+debut
+    declarer tabInt : tableau_de 1 entier;
+    tabInt[0]<- rand(1,N);
+    declarer i : entier;
+    i<-0;
+    declarer vAleatoire : entier_naturel;
+    tant_que (i<N)
+    faire
+        vAleatoire <- rand(1,N);
+        si(find3(tabInt, vAleatoire) vaut taille(tabInt))
+            allonger(tabInt,1);
+            tabInt[taille(tabInt)]-1<-vAleatoire;
+            i <- i+1;
+        fsi
+    ffaire
+    renvoie tabInt;
+fin
+algorithme testGenereTabIntAleatoireSansRedondance3
+debut
+    declarer N : entier_naturel;
+    afficher("Saisir taille tableau : ");
+    saisir(N);
+    declarer tabInt : tableau_de N entier;
+    tabInt <- genereTabIntAleatoireSansRedondance(N,M);
+    pour (i variant_de 1 a taille(tabInt))
+    faire
+        si(find(tabInt, tabInt[i]) ne_vaut_pas taille(tabInt))
+            afficher("Il y a une erreur");
+        fsi
+    ffaire
+    afficher("Il est des redondence");
+fin

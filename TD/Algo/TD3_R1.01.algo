@@ -1,0 +1,180 @@
+Exo1:
+procedure afficheTabInt ( tabInt : in tableau_de entier )
+debut
+	pour (i variant_de 0 a taille(tabInt)-1)
+	faire
+		afficher(tabInt[i]);
+	ffaire
+fin
+
+algorithme nomAlgo
+debut
+	affichier("saisir taille tableau: ");
+	declarer n : reel;
+	saisir(n);
+	declarer tabInt : tableau_de n entier;
+	pour (i variant_de 0 a n-1)
+	faire
+		affichier("saisir valeur");
+		saisir(tabInt[i]);
+	ffaire
+	afficheTabInt (tabInt);
+fin
+
+Exo2:
+procedure genereTabInt (tabInt : out tableau_de entier , n : in entier_naturel);
+
+procedure genereTabInt (tabInt : out tableau_de entier , n : in entier_naturel)
+debut
+	declarer tabInt : tableau_de n entier;
+	redimensioner(tabInt, n);
+	pour (i variant_de 0 a n-1)
+	faire
+		afficher("saisir un element");
+		saisir(tabInt[i]);
+	ffaire
+fin
+algorithme nomAlgo
+debut
+	affichier("saisir taille tableau: ");
+	declarer n : reel;
+	saisir(n);
+
+	genereTabInt(n);
+
+	afficheTabInt(tabInt);
+fin
+
+Exo3:
+fonction genereTabInt ( n : in reel  ) renvoie tableau_de entier
+debut
+	declarer tabInt : tableau_de n entier;
+	redimensioner(tabInt, n);
+	pour (i variant_de 0 a n-1)
+	faire
+		afficher("saisir un element");
+		saisir(tabInt[i]);
+	ffaire
+	renvoie tabInt
+fin
+algorithme nomAlgo
+debut
+	affichier("saisir taille tableau: ");
+	declarer n : reel;
+	saisir(n);
+	declarer tabInt : tableau_de n entier;
+	tabInt <- genereTabInt(n);
+	afficheTabInt(tabInt);
+fin
+
+Exo4:
+procedure genereTabInt (tabInt : in_out tableau_de entier ) 
+debut
+	affichier("saisir taille tableau: ");
+	declarer n : reel;
+	saisir(n);
+	redimensioner(tabInt, n);
+	pour (i variant_de 0 a n-1)
+	faire
+		afficher("saisir un element");
+		saisir(tabInt[i]);
+	ffaire
+	renvoie tabInt
+fin
+algorithme nomAlgo
+debut
+	declarer tabInt, tab2 : tableau_de n entier;
+	tab2 <- genereTabInt(tabInt);
+	afficheTabInt(tabInt);
+fin
+
+Exo5:
+procedure genereTabInt (tabInt : in_out tableau_de entier, min : in entier, max : in entier);
+
+procedure genereTabInt (tabInt : in_out tableau_de entier, min : in entier, max : in entier)
+debut
+	pour (i variant_de 0 a taille(tabInt)-1)
+	faire
+		tabInt[i] <- rand(min,max);
+	ffaire
+	renvoie tabInt
+fin
+algorithme nomAlgo
+debut
+	declarer n, min, max : entier;
+	saisir(n);
+	saisir(min);
+	saisir(max);
+	declarer tabInt, tab2 : tableau_de n entier;
+	tab2 <- genereTabInt (tabInt, min, max);
+	afficheTabInt(tab2);
+fin
+
+Exo6:
+procedure afficheTabInt (tabInt : in tableau_de entier)
+debut
+	pour (i variant_de 0 a taille(tabInt[i])-1)
+	faire
+		pour (j variant_de 1 a 5)
+		faire
+			afficher(tabInt[i]);
+			afficher(" ")
+		ffaire
+		ligne_suivante;
+	ffaire
+fin
+
+Exo7:
+procedure afficheTabInt (tabInt : in tableau_de entier)
+debut
+	pour (i variant_de 0 a taille(tabInt[i])-1)
+	faire
+		tant_que (modulo(i,5) ne_vaut_pas 0)
+		faire
+			afficher(tabInt[i]);
+			afficher(" ")
+		ffaire
+	ffaire
+fin
+
+Exo8:
+procedure afficheTabInt (tabInt : in tableau_de entier)
+debut
+	pour (i variant_de 0 a taille(tabInt[i])-1)
+	faire
+		pour (j variant_de 1 a 5)
+		faire
+			afficher(tabInt[i]);
+			afficher("-")
+		ffaire
+		ligne_suivante;
+	ffaire
+fin
+
+Exo9:
+procedure afficheTabInt (tabInt : in tableau_de entier, unCaractere : in caractere)
+debut
+	pour (i variant_de 0 a taille(tabInt[i])-1)
+	faire
+		pour (i variant_de 1 a 5)
+		faire
+			afficher(tabInt[i]);
+			afficher(unCaractere)
+		ffaire
+		ligne_suivante;
+	ffaire
+fin
+
+Ex10:
+procedure afficheTabInt (tabInt : in tableau_de entier, unCaractere : in caractere, nbElemParLigne : in entier_naturel)
+debut
+	pour (i variant_de 0 a taille(tabInt[i])-1)
+	faire
+		pour (i variant_de 1 a nbElemParLigne)
+		faire
+			afficher(tabInt[i]);
+			afficher(unCaractere)
+		ffaire
+		ligne_suivante;
+	ffaire
+fin

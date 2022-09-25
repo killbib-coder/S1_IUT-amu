@@ -1,0 +1,68 @@
+Intro. syst. exploit.
+
+Author: Martin Nevot
+Website: https://www.mickael-martin-nevot.com
+
+PPTX path: https://mickael-martin-nevot.com/univ-amu/iut/but-informatique/introduction-aux-systemes-d-exploitation-et-a-leur-fonctionnement/s42-cm1-systemes-d-exploitation-et-shell.pdf
+
+#!/bin/bash = fichier execute en bash
+
+read -p "Tapez votre réponse: " x #demande a l'utilisateur
+
+clacule en bash:
+	(( a=1 ))
+	echo $(( (a+5)/2 ))
+fonction en bash:
+	show() {
+		echo "hello $1"
+		return 5
+	}
+	show toto #Hello toto
+
+Condition/Boucles (diapo 24/25)
+
+PPTX path: https://mickael-martin-nevot.com/univ-amu/iut/but-informatique/introduction-aux-systemes-d-exploitation-et-a-leur-fonctionnement/s42-cm2-1-installation-et-configuration-de-systemes-d-exploitation.pdf
+
+firmware = driver
+NTFS:
+	Permission ACL:
+		Plus possible d'enlever le login windows
+ext4:
+	Permission POSIX:
+		chmod, etc...
+	Pas de fragmentation
+Windows ne peut pas lire ext4
+
+Gestionnaire de paquet windows: chocolatey
+	Possibilité d'exporter la liste des paquets installer chocolatey
+Machine virtuel pour cyber sécu. et pour la save pour l'envoyer a un herbergeur
+
+Etat bloque accès internet donc isolation => donc développement réseau pair a pair:
+	Chaque marchine du réseau font parti d'un ensemble sans ordre d'importance, tout le monde decide
+	Printemps arabe: sac a dos pour partager la co puis avec drone
+
+PPTX path: https://mickael-martin-nevot.com/univ-amu/iut/but-informatique/introduction-aux-systemes-d-exploitation-et-a-leur-fonctionnement/s42-cm2-2-applications.pdf
+
+Mainframe: DVI, tout taper sur un server et pas sur la machine du aux machines trop faible
+2-tier: client lourd/server (jeu: machine fais tourner les graphisme)
+3-tier: (voir diapo 4/27) le plus utilisé
+
+Ports:
+	53: DNS
+	80: HTTP
+	8080: HTTP alternatif
+wget est la manière la plus rapide de téléchargement
+Port SSH (TCP/22)
+rsync ~= scp
+telnet (TCP/23)
+
+!!!Clé ssh demander seulement lors de la première connexion sinon piratage 
+
+Serveur NFS: serveur de fichier (= SMB pour windows) 
+	ex: NAS
+
+Aide pour mail (diapo 10/27) 
+
+Nouvelle forme d'illétrisme: jeune ne sachant pas se servir d'un ordi
+
+END

@@ -1,0 +1,85 @@
+Initialisation au developpement
+
+Author: Alain Casali
+Website: https://ens.casali.me
+
+PPTX path: pptx/R101-amphi3.pptx
+
+Type complexe tableau:
+	Commence a 0 donc 8e case = 7e position
+	Déclaration:
+		declarer nomTab : tableau_de [Taille] typePrimitif
+		exemple:
+			declarer tabReel : tableau_de 10 reel;
+			tabReel[0] <- 10; // accès en écriture
+			tabReel[1] <- 11;
+			afficher (tabReel[0]); // accès lecture
+			afficher (tabReel[10]); // FAUX
+	taille (unTableau) renvoie un nombre réel
+	exemple:
+		afficher(taille(tabReel)); //10
+	allonger(unTab, nbElem); // Allonger la taille du tableau
+	redimenssionner(tabInt, 10); // Donner une nouvelle taille
+	Tronquer = Raccourcir
+Type complexe string:
+	declarer Chaine : string;
+	Chaine <- "AEIOUY\"";
+	Opérateur:
+		taille(Chaine)
+		Relation d'ordre: < <= > >=
+		vaut / ne_vaut_pas
+	Concaténation:
+		Chain <- Chaine + "0123456789";
+!!! si('a' vaut "a") X
+	'a'=caractere "a"=string
+
+Premier algorithme:
+	algorithme afficherBonjour
+	debut
+		afficher ("Hello World!");
+		ligne_suivante;
+	fin
+
+Boucle:
+	boucle
+		attaquer;
+	fboucle
+	!!! Condition d'arrêt
+		boucle
+			attaquer
+			si (victoire) sortie;
+		fboucle
+	!!! Sens d'instruction
+		boucle
+			avancer;
+			si (bordDeFalaise) sortie;      Faux car on tombe
+		fboucle
+		boucle
+			si (bordDeFalaise) sortie;
+			avancer;
+		fboucle
+Boucle tant_que / jusqua:
+	repeter
+		action1;
+		action2;
+	jusqua (CondArrêt)
+
+	tant_que (cond)
+		action2;
+	faire
+		action1;
+	ffaire
+
+	(voir diapo 19)
+
+Si cond d'arrêt touche fboucle => tant_que / jusqua
+
+Indices de tableau = i; j(2D); K(3D)
+
+Faire ses TDs a la maison:
+	Fichier décrivant algo -> Trad. en c++ -> fichier c++ -> executable GNU/Linux
+	Impossible sauf si:
+		-utilisation règles strictes
+		-utilisation d'un compilateur
+
+END

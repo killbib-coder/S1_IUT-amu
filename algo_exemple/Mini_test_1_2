@@ -1,0 +1,22 @@
+algorithme multiple_3_pas_4
+debut
+	declarer nmb : reel;
+	declarer phrase : string;
+	afficher("saisir un nombre");
+	saisir(nmb);
+	si ((modulo(nmb,3) vaut 0) ET_ALORS (modulo(nmb,4) ne_vaut_pas 0))
+		phrase <- "la prochaine fois, je me tague comme il faut sur Discord";
+		afficher(phrase);
+		afficher(phrase);
+		afficher(phrase);
+		afficher(phrase);
+	  sinon
+		phrase <- "Allez l’OM";
+		afficher(phrase);
+		afficher(phrase);
+		afficher(phrase);
+		afficher(phrase);
+		afficher(phrase);
+		afficher(phrase);
+	fsi
+fin
