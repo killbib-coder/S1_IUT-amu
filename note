@@ -1,0 +1,31 @@
+Martin Nevot: https://www.mickael-martin-nevot.com/
+
+Alain Casali: https://ens.casali.me/
+
+Accès a distance aux pc de l'I.U.T: pedagogie-vdi.univ-amu.fr
+Accès livres/magasines BU => https://ent.univ-amu.fr/tableau-bord > BU > Ressource de A a Z > search: diamond
+
+Chaine ytb: LinuxTricks
+
+Site pour shell: Cocale
+OS Mr.Robot: KaliOs
+RTFM = Read The Fucking Manual
+NTUI = Never Trust User Input
+
+type d'écriture:
+    snake_case
+    camelCase
+    PearlCase
+    kebab-case
+
+
+===================================================
+                !!! IMPORTANT !!!
+
+-Privilégier docu. anglaise (ex: course a l'espace fr vs en)
+-Commentaire de mot X utile
+-Comment. utile pour reprendre son code ou pour qu'un autre puisse le comprendre 
+-Définir la langue des comment. pour un projet
+-Tester un condition 2 fois, c'est une de top !
+-Moins d'indentation = plus lisible
+-Tou est sensible a la casse
