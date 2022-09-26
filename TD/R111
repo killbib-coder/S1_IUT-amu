@@ -1,6 +1,7 @@
 Base de la communication
 
 Author: Alexandra SALOU
+PPTX path: AMETICe
 
 ...
 
@@ -10,3 +11,54 @@ Kurt Lewin:
 	Gatekeeper = contrôleur d'info (ex: algo des réseaux sociaux). Accès a plus d'info autour du monde, pas qu'une seule chaine d'info.
 Minitel (80' 90'):
 	Accès internet grâce fournisseur d'accès. A l'heure actuelle, environ 4,2 milliards d'internaute (55% de l'humanité).
+
+Bilan: Une communication d'influence, au niveau des mass media avec une portée politique.
+
+=========================================================================================
+Comm. télégraphique
+
+Communicare (latin): mettre en commun, en relation
+Claude Shannon: Le schema de comm. de Shannon et Weaver schématise comment fonctionne la comm..
+Comprendre comment machine décrypte les codes. Comment enlever le bruit dans les téléphone pour se comprendre.
+Schéma comm. télégraphique = Shannon et Weaver
+Encodage / Décodage
+Schéma Shannon et Weaver
+
+Conception cybernétique de Nobert Wiener:
+	Professeur de Shannon, Ingé également.
+	Veut modéliser la comm. et a travailler pendant 2e guerre modiale. 
+	Propose un modèle pour aider le tireur a prévoir la trajectoire de l'avion pour le toucher. Ajustement des tirs de la DCA.
+	<<Quand je communique avec une autre personne, je lui transmets un message, et quand cette personne communique à son tour avec moi, elle me retourne le message de même nature qui contient des renseignements accessibles d'abord à elle et non à moi>>
+	2 types de feedback:
+		-positif: phénomène se réplique, accentue le phénomène
+		-négatif: amortissement ou régulation du phénomène
+	Schéma de Wiener du feedback
+
+!!! Partiel: Les apports de Wiener + schéma Shannon et Weaver (diapo 6) + schéma Wiener (diapo 9)
+
+Feedback = action d'un elem. sur un autre qui entraîne en retour une actionde sa part.
+
+Bilan et perspective:
+	-Un schéma linéaire avec Shannon, circulaire avec Wiener
+	-Une portée universelle, qui a tout de suite eu beaucoup de rententissement
+	-Les Macy Conférences
+
+Exercice: 
+	Mots: Code, canal, recepteur, message, reférent, l'émmeteur, le contexte
+	Phrase: 
+		1. Le sujet du message, ce dont on parle 
+		2. C'est l'environnement dans lequel a lieu la comm. : le lieu, le moment, les rapports sociaux, l'actualité
+		3. C'est celui qui recois le message, qui le lit qui l'entend
+		4. Le message est codé par l'emméteur et décoder par le recepteur. Il faut connaître le code pour comprendre le message
+		5. C'est l'info. transmise selon une certaine forme (écrit/dit)
+		6. C'est le support du mess. entre l'émetteur et récepteur (Radio,presse)
+		7. C'est celui qui envoie le message qui peut être écrit parlé, celui qui envoie l'info
+
+
+	Le contexte: 1
+	Référent: 2
+	Récepteur: 3
+	Le code: 4
+	Méssage: 5
+	Canal: 6
+	émméteur: 7
