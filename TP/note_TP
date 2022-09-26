@@ -20,13 +20,12 @@ TD4:
         grep -E "(a|b|c)" /etc/passwd
         grep -E "^(a|b|c|d)" /etc/passwd
         grep ^.a /etc/passwd
-        grep sh$ /etc/passwd 
+        grep "sh$" /etc/passwd 
         grep -v "home" /etc/passwd
         grep -E "^(a|e|i|o|u|y)" /etc/passwd
 
     TDX 8:
         top | grep systemd
         find /usr -name 'mkdir' | grep mkdir
-        top | awk '{print $11}'
+        (top -b -n 1 | grep -E "^MiB Mem" | awk '{print $8}')
 TD5:
-    
