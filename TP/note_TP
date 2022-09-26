@@ -1,0 +1,18 @@
+TD3:
+    TDX 9
+        xclock -update 1
+        ctrl+Z
+        bg %1
+        kill -s sigtstp %1
+        kill -s sigcont %1
+        kill -s sigkill %1
+
+    TDX 10
+        ps -Af | grep xclock
+    TDX 12
+        du -a /usr/bin | sort -n -r | head -n 10 
+        ps -aef | awk '{print $1}'
+    TD4:
+        TDX 7
+        TDX 8
+        TD4 7
