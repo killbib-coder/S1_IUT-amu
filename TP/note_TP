@@ -2,17 +2,31 @@ TD3:
     TDX 9
         xclock -update 1
         ctrl+Z
-        bg %1
-        kill -s sigtstp %1
-        kill -s sigcont %1
-        kill -s sigkill %1
+        bg 
+        kill -s SIGTSTP %1 | kill -s SIGCONT %1 | kill -s SIGKILL %1
 
     TDX 10
+        xclock -update 1 &
+        ps
+        kill -9 <PID>
         ps -Af | grep xclock
     TDX 12
         du -a /usr/bin | sort -n -r | head -n 10 
-        ps -aef | awk '{print $1}'
-    TD4:
-        TDX 7
-        TDX 8
-        TD4 7
+        ps -aef | awk '{print $1}' | sort -u
+TD4:
+    TD4 7: Directory TP
+    TDX 7:
+        grep home /etc/passwd
+        grep -E "(a|b|c)" /etc/passwd
+        grep -E "^(a|b|c|d)" /etc/passwd
+        grep ^.a /etc/passwd
+        grep sh$ /etc/passwd 
+        grep -v "home" /etc/passwd
+        grep -E "^(a|e|i|o|u|y)" /etc/passwd
+
+    TDX 8:
+        top | grep systemd
+        find /usr -name 'mkdir' | grep mkdir
+        top | awk '{print $11}'
+TD5:
+    
