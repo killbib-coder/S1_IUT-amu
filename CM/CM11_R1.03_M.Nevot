@@ -5,7 +5,7 @@ Website: <website of author>
 
 PPTX path: 
 
-RFC: request for comments = document officiel numéroté. Documentation du créateur sur son projet
+RFC: request for comments = document officiel numéroté. Documentation du créateur sur son projet souvent sur des protocols
 
 Topologie de réseau:
 	Topologie = Comment ils sont organisé
@@ -16,7 +16,13 @@ Topologie de réseau:
 	Bus: tombe moins en panne que les autres
 Pour la connexion: filaire >> wifi
 
+Possibilité de questionnement:
+	Piles de protocoles (diapo 7/20)
 
+FAI: fournisseur d'accès internet
 
+UDP: courrier simple
+TCP: courrier avec accusé de recept. 
+ACk = accusé de reception
 
 END
