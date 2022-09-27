@@ -46,5 +46,83 @@ Avant propos:
 			ex: const int Ki = 10;
 		type varIdent = value;
 			int i = 10;
+			int i (10);
+	Variable existe seulement dans le bloc {} dans laquelle elle est déclaré
+	Déclarer que des variables globales pas opti pour sécu
+	Consol input:
+		cin >> varIdent;
+			ex: int i;
+		 	 	cin >> i;
+		prérequis:
+			#include <iostream>
+			using namespace std;
+	Consol output:
+		cout << varIdent;
+			ex: cout << 10; //affiche 10
+				cout << "bonjour"; //afficher bonjour
+		prérequis:
+			#include <iostream>
+			using namespace std;
+		exemple:
+			cout << "chaine de caractère";
+			cout << 2;
+			=
+			cout << "texte ";
+				 << 2;
+			=
+			cout << "texte" << 2 << end1;
+	Space:
+		cout << end1;
+	Opérateur de comparaison:
+		égale: ==
+			ex: i == 10 
+				  ou
+				10 == i 
+		différent: !=
+			ex: i != 10
+		supérieur ou égale: >=
+			ex: i >= 10;
+		<=
+		<
+		>
+	Conditions:
+		if ( condition ) //condition prend une valeur bool
+		{
+			instruction1;
+			instruction2;
+			instruction3;
+		}
+		else if ( condition )
+		{
+			instruction1;
+			instruction2;
+		}
+		else
+		{
+			instruction1;
+			instruction2;
+		}
+	Condition logique:
+		et : &
+		ou : |
+		et_alors : &&
+		ou_sinon : ||
+	Identificateur:
+		bool:
+			valeur: vrai/faux
+			ex: bool toBe;
+			    bool noToBe;
+			    toBe = false;
+			    notToBe = !teBe;
+		int:
+			opérations:
+				+ - * / %
+			% a une priorité plus haute
+		float: réels
+	Opérateur de négation:
+		varIdent1 = !varIdent;
+		unsigned int = entier naturel
+
+	Jamais comparer (==) deux réels entre eux 4.0 != 4.000000001
 
 END
