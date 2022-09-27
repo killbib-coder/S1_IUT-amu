@@ -1,0 +1,50 @@
+Intro C++
+
+Author: A.Casali
+Website: <website of author>
+
+PPTX path:
+
+Test casali:
+	Premier étage (bat anglais)
+	Un algo => faire trace 
+	Un algo => trouver les erreurs
+	Faire un algo
+	Docu autorisé: une seule feuille A4 déjà écrite 
+
+Avant propos:
+	Ne pas redev une fonctionnalité si elle est fourni par le language
+		Exeption: demande de redev
+	Justesse de l'algo puis opti
+	être capable d'écrire une docu technique en anglais
+	Toutes variables en anglais DU DEBUT A LA FIN
+	C++ compilator:
+		g++
+		clang
+		VS2017
+	En C++:
+		Tout est appel de fonction ou de méthode
+		Tou est flux
+	C++ exemple:
+		#include <iostream>
+		using namespace std;
+		int main ()
+		{
+			cout << "Hello world" << endl;
+			return 0;
+		}
+	C++ comment:
+		comment by line: //
+		comment: /* */
+		Génération docu automatique (doxygen): /** **/
+	C++ variable declaration:
+		type varIdent; //varIdent (variable identifieur)
+			ex: int i;
+		varIdent = value;
+			ex: i = 10;
+		const type KvarIdent = value;
+			ex: const int Ki = 10;
+		type varIdent = value;
+			int i = 10;
+
+END
