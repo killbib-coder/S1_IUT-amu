@@ -28,3 +28,28 @@ fin
 
 //correction:
 
+algorithme comptPetitEnsembleV1
+debut 
+    declarer chaine : string <- "aille aille ouille";
+    declarer voyelles : constante string <- "aeiouy";
+    declarer tabCpt : tableau_de taille(voyelles) entier_naturel;
+
+    pour (i variant_de 0 a taille (tabCpt) -1)
+    faire
+        tabCpt[i] <- comptCaract (voyelle[i], chaine);
+    ffaire
+
+    declarer somme : entier_naturel <- 0;
+    pour (i variant_de 0 a taille (tabCpt) -1)
+    faire
+        somme <- somme + tabCpt[i];
+    ffaire
+
+    pour (i variant_de 0 a taille (tabCpt) -1)
+    faire
+        afficher ("la voyelle", voyelle[i], "apparait ", 
+        tabCpt[i], " fois en absolu et ", 
+        tabCpt[i] * 100 / somme , " % en relatif") ;
+        ligne_suivante;
+    ffaire
+fin

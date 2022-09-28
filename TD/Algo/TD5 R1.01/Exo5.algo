@@ -29,3 +29,39 @@ debut
                  tabNbChaqueVoyelle[i]*100/taille(chaine));
     ffaire
 fin
+
+//correction:
+
+algorithme comptPetitEnsembleV2
+debut 
+    declarer chaine : string <- "aille aille ouille";
+    declarer voyelles : constante string <- "aeiouy";
+    declarer tabCpt : tableau_de taille(voyelles) entier_naturel;
+
+    pour (i variant_de 0 a taille (tabCpt) -1)
+    faire
+        tabCpt[i] <- 0;
+    ffaire
+
+    pour (i variant_de 0 a taille (chaine) - 1)
+    faire
+        declarer pos : entier_naturel <- 
+            trouveCarDansStr (chaine[i], voyelle);
+        si (pos vaut 6) continue;
+        tabCpt [pos] <- tabCpt [pos] + 1;
+    ffaire
+
+    declarer somme : entier_naturel <- 0;
+    pour (i variant_de 0 a taille (tabCpt) -1)
+    faire
+        somme <- somme + tabCpt[i];
+    ffaire
+
+    pour (i variant_de 0 a taille (tabCpt) -1)
+    faire
+        afficher ("la voyelle", voyelle[i], "apparait ", 
+        tabCpt[i], " fois en absolu et ", 
+        tabCpt[i] * 100 / somme , " % en relatif") ;
+        ligne_suivante;
+    ffaire
+fin
