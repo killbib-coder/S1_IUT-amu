@@ -23,3 +23,51 @@ debut
     resultat <- comptCaractV2(caract, chaine);
     afficher(resultat);
 fin
+
+//Correction:
+
+fonction trouveCarDansStr (cararact : in caractere,
+    chaine : in string;
+    debut : in  entier_naturel) renvoie entier_naturel
+debut
+    declarer i : entier_naturel; 
+    i <- debut;
+    tant_que ((i < taille(chaine)) ET_ALORS 
+              (chaine[i] ne_vaut_pas caract))
+    faire 
+        i <- i + 1;
+    ffaire
+    renvoie i;
+fin
+
+fonction comptCaract (
+    caract : in caractere, 
+    chaine : in string
+) renvoie entier_naturel
+debut
+    declarer cpt : entier_naturel <- 0;
+
+    declarer pos : entier_naturel 
+        <- trouveCarDansStr (caract, chaine, 0);
+
+    tant_que (pos ne_vaut_pas (taille (chaine)))
+    faire
+        cpt <- cpt + 1;
+        pos <- trouveCarDansStr (caract, chaine, pos + 1);
+    ffaire
+    renvoie cpt;
+fin
+
+algorithme testDecomptCaract
+debut 
+    declarer str : string <- "abracadabra"; 
+    declarer car : caractere <- 'e';
+    afficher (comptCaract(car, str) vaut 0);
+    car  <- 'a';    
+    afficher (comptCaract(car, str) vaut 5);
+    str <- "bonjour tout le monde"
+    car  <- 'a';    
+    afficher (comptCaract(car, str) vaut 0);
+    car  <- 'e';    
+    afficher (comptCaract(car, str) vaut 1);
+fin

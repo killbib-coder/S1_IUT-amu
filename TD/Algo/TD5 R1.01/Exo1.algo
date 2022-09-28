@@ -11,3 +11,44 @@ debut
         renvoie taille(chaine)
     ffaire
 fin
+
+//correction:
+
+fonction trouveCarDansStr (cararact : in caractere,
+    chaine : in string;
+    debut : in  entier_naturel) renvoie entier_naturel
+debut
+    pour (i variant_de debut a taille(chaine)-1)
+    faire
+        si (chaine[i] vaut caract) renvoie i;
+    ffaire
+    renvoie taille (chaine);
+fin 
+
+fonction trouveCarDansStr (cararact : in caractere,
+    chaine : in string;
+    debut : in  entier_naturel) renvoie entier_naturel
+debut
+    declarer i : entier_naturel; 
+    i <- debut;
+    tant_que (i < taille(chaine))
+    faire 
+        si (chaine[i] vaut caract) sortie;
+        i <- i + 1;
+    ffaire
+    renvoie i;
+fin 
+
+fonction trouveCarDansStr (cararact : in caractere,
+    chaine : in string;
+    debut : in  entier_naturel) renvoie entier_naturel
+debut
+    declarer i : entier_naturel; 
+    i <- debut;
+    tant_que ((i < taille(chaine)) ET_ALORS 
+              (chaine[i] ne_vaut_pas caract))
+    faire 
+        i <- i + 1;
+    ffaire
+    renvoie i;
+fin

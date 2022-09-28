@@ -23,3 +23,37 @@ debut
     resultat <- comptCaract(caract, chaine);
     afficher(resultat);
 fin
+
+//correction:
+
+fonction comptCaract (
+    caract : in caractere, 
+    chaine : in string
+) renvoie entier_naturel
+debut
+    declarer cpt : entier_naturel <- 0;
+    pour (i variant_de 0 a taille(chaine)-1)
+    faire
+        si (chaine[i] vaut caract)
+            cpt <- cpt + 1;
+        fsi
+    ffaire
+    renvoie cpt;
+fin
+
+algorithme testDecomptCaract
+debut 
+    declarer str : string <- "abracadabra"; 
+    declarer car : caractere <- 'e';
+    
+    afficher (comptCaract(car, str) vaut 0);
+
+    car  <- 'a';    
+    afficher (comptCaract(car, str) vaut 5);
+
+    str <- "bonjour tout le monde"
+    car  <- 'a';    
+    afficher (comptCaract(car, str) vaut 0);
+    car  <- 'e';    
+    afficher (comptCaract(car, str) vaut 1);
+fin
