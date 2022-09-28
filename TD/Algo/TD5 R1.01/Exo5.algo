@@ -1,0 +1,31 @@
+algorithme compteurVoyelle
+debut 
+    declarer voyelle : tableau_de 6 string;
+    declarer tabString : tableau_de X entier;
+    declarer cptNombreVoyelle : entier_naturel <- 0;
+    declarer tabNbChaqueVoyelle : tableau_de entier_naturel;
+    voyelle <- "aeiouy";
+    tabString <- "Je suis une chaine de caractere";
+    pour (i variant_de 0 a taille(tabString)-1)
+    faire 
+        declarer j : entier_naturel <- 0;
+        pour (j < taille(voyelle)-1)
+        faire 
+            si (voyelle[j] vaut tabString[i])
+                cptNombreVoyelle <- cptNombreVoyelle+1;
+                sortie
+            fsi
+            j <- j +1;
+        ffaire
+    ffaire
+    pour (i variant_de 0 a taille(voyelle)-1) 
+    faire
+        tabNbChaqueVoyelle[i] <- comptCaractV2(voyelle[i],tabString);
+    ffaire
+    afficher(cptNombreVoyelle, tabNbChaqueVoyelle)
+    pour (i variant_de 0 a taille(voyelle)-1) 
+    faire
+        afficher("La voyelle ", voyelle[i], " apparait ", tabNbChaqueVoyelle[i], " fois a une fréquece de ", 
+                 tabNbChaqueVoyelle[i]*100/taille(chaine));
+    ffaire
+fin

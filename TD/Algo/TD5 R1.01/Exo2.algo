@@ -1,0 +1,25 @@
+fonction comptCaract(caract : in caratere,
+                     chaine : in string ) renvoie entier_naturel
+debut 
+    declarer compteur : entier;
+    compteur <- 0;
+    pour (i variant_de 0 a taille(chaine)-1) 
+    faire
+        si (caract vaut chaine[i])
+        faire 
+            compteur <- compteur+1;
+        ffaire
+    ffaire
+    renvoie compteur
+fin
+algorithme testComptCaract
+debut
+    declarer caract : caractere;
+    declarer chaine : string;
+    declarer resultat : entier_naturel;
+    afficher("saisir caract puis chaine");
+    saisir(caract);
+    saisir(chaine);
+    resultat <- comptCaract(caract, chaine);
+    afficher(resultat);
+fin

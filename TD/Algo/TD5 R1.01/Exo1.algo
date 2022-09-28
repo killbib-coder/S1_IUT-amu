@@ -1,0 +1,13 @@
+fonction trouveCarDansStr(caract : in caratere,
+                          chaine : in string,
+                          debut : in entier_naturel ) renvoie entier_naturel
+debut
+    pour (i variant_de debut a taille(chaine)-1) 
+    faire
+        si (chaine[i] vaut caract)
+        faire 
+            renvoie i
+        ffaire
+        renvoie taille(chaine)
+    ffaire
+fin

@@ -1,0 +1,25 @@
+fonction comptCaractV2(caract : in caratere,
+                     chaine : in string ) renvoie string
+debut 
+    declarer cpt,resultat : entier_naturel;
+    cpt <- 0;
+    resultat <- 0;
+    boucle 
+        si (trouveCarDansStr(caract,chaine,cpt) vaut taille(chaine)) sortie;
+        cpt <- cpt + 1 + trouveCarDansStr(caract,chaine,cpt);
+        resultat <- resultat +1;
+    fboucle
+    renvoie resultat
+fin
+
+algorithme testComptCaractV2
+debut
+    declarer caract : caractere;
+    declarer chaine : string;
+    declarer resultat : entier_naturel;
+    afficher("saisir caract puis chaine");
+    saisir(caract);
+    saisir(chaine);
+    resultat <- comptCaractV2(caract, chaine);
+    afficher(resultat);
+fin
