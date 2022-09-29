@@ -10,12 +10,10 @@
 	Protès cybernétique
 	Exosquelette
 
-Entreprise d'amélioration d'humain
+**Brain Storming**
+	remettre les humains a niveau par rapport aux avancé techno
+	vente de donée du cerveau 
+	rechergement le nuit ou option générateur arc + cher
 
-**History:** Tom voulait vendre des organes
-
-remettre les humains a niveau par rapport aux avancé techno
-
-vente de donée du cerveau 
-
-rechergement le nuit ou option générateur arc + cher
+**History:** 
+	Tom voulait vendre des organes
