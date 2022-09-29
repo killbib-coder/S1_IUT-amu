@@ -50,5 +50,6 @@
 				-Augementation de l'espérence de vie des hummains
 				-Rendre le soin accessible a tous
 				-Favoriser les relation avec la société
+		-Améliorer l'humanité
 
 
