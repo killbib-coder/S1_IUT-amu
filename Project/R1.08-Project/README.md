@@ -35,7 +35,7 @@
 
 	Rep:
 		-Améliorer la race humaine de ses imperfections pour survivre sur mars
-		-On va produire et vendre des  implants/prothèses cybernétiques, on va aussi permettre l'intallation dans des centres spécialisé/hopitaux
+		-On va produire et vendre des  implants/prothèses cybernétiques, on va aussi permettre l'intallation dans des centres spécialisé de notre société
 		-La clientèle ciblée n'est pas défini. Elle peut très bien être utilisé par des particuliers et des proféssionel
 		-Finalités
 			1.économiques: 
@@ -51,5 +51,3 @@
 				-Rendre le soin accessible a tous
 				-Favoriser les relation avec la société
 		-Améliorer l'humanité
-
-
