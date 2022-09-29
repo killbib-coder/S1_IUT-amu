@@ -18,16 +18,22 @@
 **History:** 
 	Tom voulait vendre des organes
 
--Finalité de votre entreprise :
-	1. Pourquoi existe-elle
--Production/vente | bien/service
-	1. à préciser/détailler
--Clientèle ciblée
-	1. Particulier/profféssionnels
--Finalités économiques
-	3 objectifs:
-		1. économiques
-		2. socials
-		3. sociétals
--Réflexion RSE: Que proposez-vous ?
+**Sujet**
+	-Finalité de votre entreprise :
+		1. Pourquoi existe-elle
+	-Production/vente | bien/service
+		1. à préciser/détailler
+	-Clientèle ciblée
+		1. Particulier/proféssionnels
+	-Finalités économiques
+		3 objectifs:
+			1. économiques
+			2. socials
+			3. sociétals
+	-Réflexion RSE: Que proposez-vous ?
+
+	Rep:
+		-Améliorer la race humaine de ses imperfections pour survivre sur mars
+		-On va produire et vendre des  implants/prothèses cybernétiques, on va aussi permettre l'intallation dans des centres spécialisé/hopitaux
+		-La clientèle ciblée n'est pas défini. Elle peut très bien être utilisé par des particuliers et des proféssionel
 
