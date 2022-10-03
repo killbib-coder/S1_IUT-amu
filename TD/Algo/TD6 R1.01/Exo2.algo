@@ -3,7 +3,7 @@ debut
     declarer compte : entier_naturel <- 0;
     pour (i variant_de 0 a taille(Str)-2)
     faire 
-        si (Str[i] vaut Str[i+1])
+        si (NON isSpace(Str[i]) ET_ALORS (Str[i] vaut Str[i+1]))
             compte <- compte+1;
         fsi
     ffaire
@@ -15,7 +15,8 @@ debut
     declarer cptBoucle : entier_naturel <- 0;
     tant_que (cptBoucle ne_vaut_pas taille(Str)-2)
     faire 
-        si (Str[i] vaut Str[i+1])
+        si ( isSpace(Str[cptBoucle])) continue;
+        si (Str[cptBoucle] vaut Str[cptBoucle+1])
             compte <- compte+1;
         fsi
         cptBoucle <- cptBoucle +1;
