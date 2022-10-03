@@ -2,10 +2,11 @@ fonction compterDoublonsTantQue (Str : in string) renvoie entier_naturel
 debut
     declarer compte : entier_naturel <- 0;
     declarer cptBoucle : entier_naturel <- 0;
-    tant_que (cptBoucle ne_vaut_pas taille(Str)-2)
+    tant_que (cptBoucle <= taille(Str)-2)
     faire 
         si ( NON isSpace(Str[cptBoucle]) ET_ALORS (Str[cptBoucle] vaut Str[cptBoucle+1]))
             compte <- compte+1;
+            cptBoucle <- cptBoucle+1
         fsi
         cptBoucle <- cptBoucle +1;
     ffaire
