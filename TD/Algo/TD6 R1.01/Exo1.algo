@@ -1,0 +1,69 @@
+fonction isLower(car : in caractere) : renvoie booleen
+debut
+    declarer alphabetMin : string <- "abcdefghijklmnopqrstuvwxyz";
+    si (trouveCarDansString(car, alphabetMaj) ne_vaut_pas taille(alphabetMaj))
+        renvoie vrai;        
+    sinon
+        renvoie faux;
+    fsi
+fin
+
+
+//fonction isUpper 
+fonction isUpper(car : in caractere) : renvoie booleen
+debut
+    declarer alphabetMaj : string <- "ABCDEFGHIJKLMNOPKRSTUVWXYZ";
+    si (trouveCarDansString(car, alphabetMaj) ne_vaut_pas taille(alphabetMaj))
+        renvoie vrai;        
+    sinon
+        renvoie faux;
+    fsi
+fin
+fonction isUpperOpti(car : in caractere) : renvoie booleen
+debut
+    declarer alphabetMaj : string <- "ABCDEFGHIJKLMNOPKRSTUVWXYZ";
+    renvoie (trouveCarDansString(car, alphabetMaj) ne_vaut_pas taille(alphabetMaj));
+    
+fin
+fonction isUpperBizarre(car : in caractere) : renvoie booleen 
+debut
+    si ((car >= 'A') ET_ALORS (car <= 'Z'))
+        renvoie vrai;
+    sinon
+        renvoie faux;
+    fsi
+fin
+fonction isUpperBizarreOpti(car : in caractere) : renvoie booleen 
+debut
+    renvoie (('A' >= car) ET_ALORS ('Z' <= car));                   //2 test a faire donc mieux
+fin
+
+
+fonction isDigitOpti(car : in caractere) : renvoie booleen
+debut
+    declarer digit : string <- "0123456789";
+    renvoie (trouveCarDansString(car, digit) ne_vaut_pas taille(digit));
+    
+fin
+
+
+// //Mon exo
+// fonction isDigit(car : in caractere) : renvoie booleen
+// debut
+//     declarer digit : string <- "0123456789";
+//     pour (i variant_de 0 a taille(digit)-1)   
+//     faire
+//         si (car vaut digit[i])
+//             renvoie vrai;
+//         fsi
+//     ffaire
+//     renvoie faux;
+// fin
+
+fonction isSpace(car : in caractere) : renvoie booleen
+debut
+    renvoie ((car vaut ' ') OU_SINON (car vaut '\n') OU_SINON (car vaut '\t'));
+                            //Simple cote car les double sont des string or les sting 
+                            //peuvent valoir plusieurs valeur
+                            //Optimiser les conditions en fonction de la proba d'être utilisé
+fin

@@ -1,0 +1,11 @@
+fonction compterDoublons (Str : in string) renvoie entier_naturel 
+debut
+    declarer compte : entier_naturel <- 0;
+    pour (i variant_de 0 a taille(Str)-2)
+    faire 
+        si (Str[i] vaut Str[i+1])
+            compte <- compte+1;
+        fsi
+    ffaire
+    
+fin
