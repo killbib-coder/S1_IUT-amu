@@ -1,2 +1,33 @@
 Partiel n°1 R1.01
 
+15 erreurs:
+	trouver + justifier 1 pts
+	trouver 0,5 pts
+	touve une erruer pas une erreur: ignorer
+
+	-Pas type tableau L1
+	-Pas de r dans entier natuRel
+	-Pas d'initialisation de n
+	-Pas de "" et ; L6 (deux fautes)
+	-Tanque au lieu de tant_que L8
+	-{} au lieu de faire ffaire L9
+	-Manque virgule i , "eme elem" L10
+	-++i existe pas L12
+	-Renvoie rien dans procedure L14
+	-Point virgule a fin
+	-Point virgule après déclaration fonction L18
+	-pas de ; L21
+	-T <- T1 impossible
+	-Point virgule L23
+	-Variant_de sans tiret L25
+	-Manque -1 L25
+	-= existe pas L27
+	-Fin au lieu de ffaire L28
+	-Algorithme prend pas majuscule L32
+	-Pas de nom d'algo L32
+	-= existe pas L39
+	-Variant_de sans _ L41
+	-taille()-1 L41
+	-Manque parenthèse L43
+	-fin au lieu de ffaire L44
+	-Point virgule en trop L45
