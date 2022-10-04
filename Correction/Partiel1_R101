@@ -31,3 +31,13 @@ Partiel n°1 R1.01
 	-Manque parenthèse L43
 	-fin au lieu de ffaire L44
 	-Point virgule en trop L45
+
+Qu'est-ce qu'il fait:
+	Faire trace algo
+	La procedure EtudiantBonOuPas ne renvoie rien donc algorithme s'arrête et affiche une erreur
+	Résultat: sa plante
+
+	Justifier le pourquoi ca affiche une erreur
+
+Cryptage César:
+	 
