@@ -40,4 +40,14 @@ Qu'est-ce qu'il fait:
 	Justifier le pourquoi ca affiche une erreur
 
 Cryptage César:
-	 
+	1.1:
+		procedure DecrypteCesar (Str : in string, str2 : out string); 
+	1.2:
+		fonction MySucc (C : in caractere) renvoie caracter
+		debut
+			si (C vaut 'Z') renvoie 'A';
+			sinon_si (C vaut 'z') renvoie 'z';
+		fin
+
+
+		!!! Voir discord !!!
