@@ -1,0 +1,29 @@
+Intro C++
+
+Author: A.Casali
+Website: <website of author>
+
+PPTX path:
+
+
+
+char c = 'a';
+char next = ++c;  //marche
+
+char next = ++'a'; //marche pas
+
+#include <cctype>
+toupper();
+tolower();
+islower();
+isalpha();
+
+site: cplusplus.com
+
+caractere spéciaux:
+	\t //tab
+	\n //saut de ligne
+	\r //retour chariot
+	\'
+
+END
