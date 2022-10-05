@@ -26,4 +26,34 @@ caractere spéciaux:
 	\r //retour chariot
 	\'
 
+var.size(); //renvoie taille
+
+pas i++ mais ++i
+
+break;/continue;
+
+case 'A':
+case 'a':  //si A ou a
+
+
+char c;
+cin >> c;
+for (; 'q' != tolower (c); cin>>c)
+{
+	
+}
+
+procedure:
+	void procName (var : [in,out,in_out] type, ...)
+	{
+
+	}
+fonction:
+	returnType foncName (var : [in,out,in-out] type, ...)
+	{
+		return var;
+	}
+
+void nameProc ( const int & min, const int & max , int & res); //const pour in et rien pour out
+
 END
