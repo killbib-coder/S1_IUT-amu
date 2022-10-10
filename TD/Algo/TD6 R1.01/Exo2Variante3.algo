@@ -1,0 +1,19 @@
+fonction compterDoublonsvariante3 (str : in string) renvoie entier_naturel 
+debut
+    declarer total : entier_naturel <- 0;
+    declarer i : entier_naturel <- 0;
+    declarer j : entier_naturel;
+    tant_que(i<taille(str)-1)
+    faire
+        j <- i+1;
+        tant_que(isSpace(str[j]))
+        faire
+            j <- j+1;
+        ffaire
+        si(str[i] vaut str[j]) 
+            total <- total + 1;
+        fsi
+        i <- j;
+    ffaire
+    renvoie total;
+fin
