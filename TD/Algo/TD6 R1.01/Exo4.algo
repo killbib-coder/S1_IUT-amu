@@ -1,0 +1,15 @@
+fonction compterDoublonsWithFindFirstDoublon ( chaine : in string ) renvoie entier_naturel
+debut
+    
+    declarer compteur,i : entier_naturel <- 0 ;
+    declarer indiceRepetition : entier_naturel ;
+    repeter 
+        indiceRepetition <- findFirstDoublon (chaine ,  i ) ;
+        si ( indiceRepetition ne_vaut_pas taille ( chaine ))
+            i <- indiceRepetition + 1 ; 
+            compteur <- compteur +1 ;
+        fsi
+
+    tant_que ( i < taille ( chaine ) )
+    renvoie compteur ;
+fin
