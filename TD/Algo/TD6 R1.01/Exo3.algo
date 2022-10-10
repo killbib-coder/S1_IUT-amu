@@ -1,0 +1,12 @@
+fonction findFirstDoublon ( chaine : in string, debut : in entier_naturel) renvoie entier_naturel 
+debut 
+    declarer i : entier_naturel <- debut + 1 ;
+    tant_que ( i  < taille ( chaine ))
+    faire
+        si ( (NON(isSpace(chaine[i]))) et_alors (str[i-1] vaut chaine[i]))
+            renvoie i-1;
+        fsi
+        i <- i + 1;
+    ffaire
+    renvoie taille(chaine) ;
+fin
