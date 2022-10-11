@@ -1,3 +1,0 @@
-#!/bin/bash
-echo "$USER a ouvert le fichier qu'il ne faut pas l'ouvrir" >> journal.txt
-

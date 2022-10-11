@@ -27,7 +27,7 @@ TD4:
     TDX 8:
         top | grep systemd
         find /usr -name 'mkdir' | grep mkdir
-        (top -b -n 1 | grep -E "^MiB Mem" | grep -E " ([\.0-9]*)" )
+        top -b -n 1 | grep -E "^MiB Mem" | grep -E " ([,0-9]*) util" -o
 TD5:
 
 TD6:
