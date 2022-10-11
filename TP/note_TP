@@ -27,7 +27,7 @@ TD4:
     TDX 8:
         top | grep systemd
         find /usr -name 'mkdir' | grep mkdir
-        (top -b -n 1 | grep -E "^MiB Mem" | awk '{print $8}')
+        (top -b -n 1 | grep -E "^MiB Mem" | grep -E " ([\.0-9]*)" )
 TD5:
 
 TD6:
@@ -38,4 +38,3 @@ TD6:
         4. 10100000101 | 505
         5. 1309 | 51D
     Exo 3:
-        
