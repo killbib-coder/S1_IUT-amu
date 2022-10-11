@@ -29,3 +29,13 @@ TD4:
         find /usr -name 'mkdir' | grep mkdir
         (top -b -n 1 | grep -E "^MiB Mem" | awk '{print $8}')
 TD5:
+
+TD6:
+    Exo 2:
+        1. 100101
+        2. 11100 | 1C
+        3. 10010101 | 95
+        4. 10100000101 | 505
+        5. 1309 | 51D
+    Exo 3:
+        
