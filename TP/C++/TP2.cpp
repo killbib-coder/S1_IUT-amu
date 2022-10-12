@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 #include "EasyAssert.h"
+#include <vector>
 
 
 // Exo1
@@ -56,6 +57,25 @@ unsigned ComptCaracV2(char Caract, string Chaine){
     EASY_ASSERT(ComptCarac('a', Str)==3);
     EASY_ASSERT(ComptCarac('b', Str)==0);
 }
+
+
+// Exo4
+vector<unsigned> ComptEnsembleDansChaine (const string & ChaineACompter, const string & ChaineDeComptage){
+    vector<unsigned> Sortie (ChaineDeComptage.size());
+    for (unsigned i = 0; i < ChaineDeComptage.size(); i++)
+    {
+        Sortie[i]=0;
+        Sortie[i]=ComptCaracV2(ChaineDeComptage[i],ChaineACompter);
+    }
+    return Sortie;
+} void AssertComptEnsembleDansChaine(){
+    string Str = "Salut ca va?";
+    vector<unsigned> VecTestSortie = {3,1,0};
+    EASY_ASSERT(ComptEnsembleDansChaine(Str,"atb")==VecTestSortie);
+}
+
+
+
 
 
 int main(){
