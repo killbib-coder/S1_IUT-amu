@@ -79,6 +79,6 @@ vector<unsigned> ComptEnsembleDansChaine (const string & ChaineACompter, const s
 
 
 int main(){
-    AssertComptCaracV2();
+    AssertComptEnsembleDansChaine();
     return 0;
 }
