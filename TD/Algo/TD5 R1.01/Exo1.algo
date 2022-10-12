@@ -14,9 +14,7 @@ fin
 
 //correction:
 
-fonction trouveCarDansStr (cararact : in caractere,
-    chaine : in string;
-    debut : in  entier_naturel) renvoie entier_naturel
+fonction trouveCarDansStr (cararact : in caractere, chaine : in string, debut : in  entier_naturel) renvoie entier_naturel
 debut
     pour (i variant_de debut a taille(chaine)-1)
     faire
