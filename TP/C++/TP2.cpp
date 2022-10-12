@@ -12,14 +12,15 @@ unsigned TrouveCarDansString (char Caract, string Chaine,unsigned Debut){
     return i;
     
 }
-void AssertTrouveCarDansString(char Caract, string Chaine,unsigned Debut){
-    EASY_ASSERT(TrouveCarDansString(Caract, Chaine, Debut));
+void AssertTrouveCarDansString(){
+    string Str = "Salut ca va";
+    EASY_ASSERT(TrouveCarDansString('a', Str, 0)==1);
+    EASY_ASSERT(TrouveCarDansString('a', Str, 3)==7);
+    EASY_ASSERT(TrouveCarDansString('a', Str, 6)==7);
+    EASY_ASSERT(TrouveCarDansString('b', Str, 6)==11);
 }
 
 int main(){
-    string str;
-    str = "Salut ca va ?";
-    cout << TrouveCarDansString('c', str, 0) << endl;
-    AssertTrouveCarDansString('a', str, 0);
+    AssertTrouveCarDansString();
     return 0;
 }
