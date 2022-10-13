@@ -1,9 +1,10 @@
 # R1.08-Project
-```
-**Project director:** 
-	Pierrik
 
-**Project idea:** 
+**Project director:** 
+	Pierrick
+
+```
+Project idea: 
 	Cybersecu
 	Transport
 	Greffe d'organes
@@ -11,15 +12,15 @@
 	Protès cybernétique
 	Exosquelette
 
-**Brain Storming:**
+Brain Storming:
 	remettre les humains a niveau par rapport aux avancé techno
 	vente de donée du cerveau 
 	rechergement le nuit ou option générateur arc + cher
 
-**History:** 
+History:
 	Tom voulait vendre des organes
 
-**Sujet**
+Sujet:
 	-Finalité de votre entreprise :
 		1. Pourquoi existe-elle
 	-Production/vente | bien/service
