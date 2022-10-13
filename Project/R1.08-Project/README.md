@@ -1,9 +1,10 @@
 # R1.08-Project
 
 **Project director:** 
-	Pierrik
+	Pierrick
 
-**Project idea:** 
+```
+Project idea: 
 	Cybersecu
 	Transport
 	Greffe d'organes
@@ -11,15 +12,15 @@
 	Protès cybernétique
 	Exosquelette
 
-**Brain Storming:**
+Brain Storming:
 	remettre les humains a niveau par rapport aux avancé techno
 	vente de donée du cerveau 
 	rechergement le nuit ou option générateur arc + cher
 
-**History:** 
+History:
 	Tom voulait vendre des organes
 
-**Sujet**
+Sujet:
 	-Finalité de votre entreprise :
 		1. Pourquoi existe-elle
 	-Production/vente | bien/service
@@ -32,7 +33,6 @@
 			2. socials
 			3. sociétals
 	-Réflexion RSE: Que proposez-vous ?
-
 	Rep:
 		-Améliorer la race humaine de ses imperfections pour survivre sur mars
 		-On va produire et vendre des  implants/prothèses cybernétiques, on va aussi permettre l'intallation dans des centres spécialisé de notre société
