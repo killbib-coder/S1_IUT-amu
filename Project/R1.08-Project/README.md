@@ -32,7 +32,6 @@
 			2. socials
 			3. sociétals
 	-Réflexion RSE: Que proposez-vous ?
-
 	Rep:
 		-Améliorer la race humaine de ses imperfections pour survivre sur mars
 		-On va produire et vendre des  implants/prothèses cybernétiques, on va aussi permettre l'intallation dans des centres spécialisé de notre société
