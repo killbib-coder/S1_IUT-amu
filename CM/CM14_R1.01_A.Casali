@@ -46,6 +46,13 @@ if ( X < 0.0){
 ==
 var = (X < 0.0) ? -X : X
 
+if ( var == 2){
+	return 0;
+} else {
+	return 3;
+}
+==
+return (X < 0.0) ? 0 : 3;
 
 
 
