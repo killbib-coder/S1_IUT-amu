@@ -1,0 +1,19 @@
+Intro C++
+
+Author: A.Casali
+Website: <website of author>
+
+Tri selection
+Tri insertion
+Tri a bulles (opti avec permutation croissante puis décroissante)
+Tri par comptage (dépendant de la mémoire)
+
+Test algo (demande plusieurs lancement pour être juste):
+	temp début
+	appel de fonction
+	temp fin
+	calculer différence entre deux temps
+Mais n'est pas suffisant 
+
+
+END
