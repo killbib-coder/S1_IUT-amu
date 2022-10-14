@@ -14,6 +14,34 @@ Test algo (demande plusieurs lancement pour être juste):
 	temp fin
 	calculer différence entre deux temps
 Mais n'est pas suffisant 
+Sans référence on va copier le tableau donc perte de 20%
+
+Partiel:
+	-15 20 boulettes
+	-Traduction algo C++
+	-
+
+SAE étudier différents systèmes de vote:
+	Faire test avec fichier oracle
+	Implémenter différentes solutions de votes (anonymat pas important)
+		Considerer lapart 1 + choisir min 4 systs de votes a implémenter
+	Video Defekator
+
+	Implémenter 
+	Comprendre 
+	Tester
+
+	Mardi 18 oct grp de TD 5 pers
+
+	Rendu 25 Nov. 23h59 :
+		Rapport pdf + diapo 
+		-1 pt par minutes de retard
+		Copie entre grp = 0 pour les deux 
+
+
+
+
+
 
 
 END
