@@ -38,7 +38,13 @@ SAE étudier différents systèmes de vote:
 		-1 pt par minutes de retard
 		Copie entre grp = 0 pour les deux 
 
-
+if ( X < 0.0){
+	var = -X
+} else {
+	var = X
+}
+==
+var = (X < 0.0) ? -X : X
 
 
 
