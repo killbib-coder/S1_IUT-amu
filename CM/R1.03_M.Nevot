@@ -1,0 +1,262 @@
+Intro. archi. des ordinateurs
+
+Author: Martin Nevot
+Website: https://www.mickael-martin-nevot.com
+
+
+#########################################################################################										CM1
+#########################################################################################
+
+Evaluation:
+	-Participation
+	-Validation compétences
+Avant propos:
+	Avoir même voc pour ne pas parler des langues étrangères 
+
+
+https://www.mickael-martin-nevot.com/univ-amu/iut/but-informatique/introduction-a-l-architecture-des-ordinateurs/s39-cm1-introduction.pdf
+
+Voca:
+	Méthode scientifique (Descartes):
+		1. Objet évident
+		2. Diviser en pb triviaux //Trivaux = de manière évidente
+		3. Recomposer
+		4. Réviser
+
+	Représentation: rendre sensible un concept ou un objet absent
+	Système: ensemble d'éléments intéragissant entre eux selon des règles
+	Modélisation:
+		-Représentation abstraite
+		-Vu subjective, décomposée
+		-Représentation d'un syst. dans un autre monde que celui du syst.
+	Paradigme: représentation du monde selon un modèle cohérent
+	Logique: repr. virt. à opp. desc. physique
+	-> Logique:
+		Technique: non spécifique, utilitaire
+		Métier: spécifiqueau <<métier>> ou domaine du syst.
+	"Michel serf : <<Demandez vous si c'est la personne qui construit des ponts ou celle qui y met des péages>>"
+	Sémantique: sens: traite de l'interpretation et de la signification des syst. 
+	Déscrétisation: représentation fini discontinue d'un ensemble continue 
+		ex: Unité est pixel donc si on zoom la ligne deviendra des escalier de pixels
+	|-> Google va sortir des images de poire a lavement si recherche = poire car n'a pas les 2 notions vu plus haut
+	Prédicat : ce qui est affirmé à propos d'un autre terme
+	Idempotence: opération ayant le même effet qu'on l'applique 1 ou >1 fois
+	Atomique: operation qui s'execute jusqu'à ce qu'elle est fini son déroulement
+	Service: comportement logique permettant la communication et l'échange de données entre app. et syst. hétérogène
+	Programme: séquence d'instructions
+	Processus: programme en cours d'exec.
+	Logiciel: 1 || + programmes avec données et doc.
+	Syst. exploit.: ensemble de programmes contrôlant du materiel info.
+
+	Opensource: faire ce que l'on veut du code source
+	Logiciel libre: +politique, +philosophique
+	Creative commons (cc): pas d'utilisation commercial et mettre le nom d'auteur (Variable)
+
+Historique des grandes personnes de l'info. (voir diapo 8-29)
+
+Films info.:
+	Citizenfour / Jobs / Steve Jobs / Cyber Tr@que / On ne peut pas avoir 500 millions d'amis... / Le 5eme Pouvoir
+
+Schéma commande:
+	cmd -opt1opt2 par1 par2
+
+
+#########################################################################################										CM2
+#########################################################################################
+
+Intro. aux SE et leur fonctionnement:
+	## Syst. d'exploit. et shell
+https://www.mickael-martin-nevot.com/univ-amu/iut/but-informatique/introduction-aux-systemes-d-exploitation-et-a-leur-fonctionnement/s42-cm1-systemes-d-exploitation-et-shell.pdf
+
+Chaque diapo s'inscrit dans une des 4 catégories (voir diapo 3/25)
+Redirection de sorti ls > file (affiche rien et l'incrit dans le fichier donné)
+	> : écrase
+	>> : ajoute
+	2>/2>> : erreurs 
+	&>/&>> : tout
+	| : pipe = canal de communication 
+		ex: ls -l | grep ... | less
+	alias cration de commande
+		ex: alias la='ls-A'
+	; : lancement de séquences de commandes
+	ls == /bin/ls pck l'alias ls peut être modifié (virus, etc...)
+
+PID = Process Identiant  							fork = cloner
+PPID = parent PID									deamons = pas de contrôle par l'utilisateur
+bg = background (CTRL+Z) != fg = foreground 		xterm & = lancer en arrière plan
+jobs = process en arrière plan 						kill = envoyer un signal
+top = afficher les process en tmps réel				term = demande d'arrêt
+Trim = virer les espaces et indentations
+
+Gestion données persistante (voir diapo 8)
+	
+	head = afficher début
+	tail =    //    fin
+	tail -f = afficher en temp réel
+	diff = différence entre deux fichiers
+	grep = recheche dans fichier (ps -aux | grep firefox)
+	sed = éditer texte sans interface
+
+absolut = tjr vrai, ne varie pas
+Filtres fichier (diapo 11/25)
+Expression rationnelles (diapo 12/25 - 14/25)
+	exercice: diapo 13/25
+
+
+
+Gestion des communications: (diapo 15/25)
+	X = tout ce qui n'est pas graphique
+Gestion de la sécurité: (diapo 17/25)
+	whoami = afficher nom user
+	unmask = définir les droits par défauts
+	id = afficher UID, GID
+	finger = afficher données user
+	groups = afficher grp d'un user
+Variable d'environnement: (voir 19/25)
+	$HOME => $: pour récupérer la valeur
+
+
+#########################################################################################										CM3
+#########################################################################################
+
+PPTX path: https://mickael-martin-nevot.com/univ-amu/iut/but-informatique/introduction-aux-systemes-d-exploitation-et-a-leur-fonctionnement/s42-cm1-systemes-d-exploitation-et-shell.pdf
+
+#!/bin/bash = fichier execute en bash
+
+read -p "Tapez votre réponse: " x #demande a l'utilisateur
+
+clacule en bash:
+	(( a=1 ))
+	echo $(( (a+5)/2 ))
+fonction en bash:
+	show() {
+		echo "hello $1"
+		return 5
+	}
+	show toto #Hello toto
+
+Condition/Boucles (diapo 24/25)
+
+PPTX path: https://mickael-martin-nevot.com/univ-amu/iut/but-informatique/introduction-aux-systemes-d-exploitation-et-a-leur-fonctionnement/s42-cm2-1-installation-et-configuration-de-systemes-d-exploitation.pdf
+
+firmware = driver
+NTFS:
+	Permission ACL:
+		Plus possible d'enlever le login windows
+ext4:
+	Permission POSIX:
+		chmod, etc...
+	Pas de fragmentation
+Windows ne peut pas lire ext4
+
+Gestionnaire de paquet windows: chocolatey
+	Possibilité d'exporter la liste des paquets installer chocolatey
+Machine virtuel pour cyber sécu. et pour la save pour l'envoyer a un herbergeur
+
+Etat bloque accès internet donc isolation => donc développement réseau pair a pair:
+	Chaque marchine du réseau font parti d'un ensemble sans ordre d'importance, tout le monde decide
+	Printemps arabe: sac a dos pour partager la co puis avec drone
+
+PPTX path: https://mickael-martin-nevot.com/univ-amu/iut/but-informatique/introduction-aux-systemes-d-exploitation-et-a-leur-fonctionnement/s42-cm2-2-applications.pdf
+
+Mainframe: DVI, tout taper sur un server et pas sur la machine du aux machines trop faible
+2-tier: client lourd/server (jeu: machine fais tourner les graphisme)
+3-tier: (voir diapo 4/27) le plus utilisé
+
+Ports:
+	53: DNS
+	80: HTTP
+	8080: HTTP alternatif
+wget est la manière la plus rapide de téléchargement
+Port SSH (TCP/22)
+rsync ~= scp
+telnet (TCP/23)
+
+!!!Clé ssh demander seulement lors de la première connexion sinon piratage 
+
+Serveur NFS: serveur de fichier (= SMB pour windows) 
+	ex: NAS
+
+Aide pour mail (diapo 10/27) 
+
+Nouvelle forme d'illétrisme: jeune ne sachant pas se servir d'un ordi
+
+
+#########################################################################################										CM4
+#########################################################################################
+
+PPTX path: https://mickael-martin-nevot.com/univ-amu/iut/but-informatique/introduction-aux-systemes-d-exploitation-et-a-leur-fonctionnement/s42-cm2-2-applications.pdf
+
+Linus Torvalds -> créateur git
+Lexique: diapo 13/27
+Ne plus dire Master mais Main mais Main est un alias donc c'est "tout pourri"
+Github = interface web de git
+Markdown = lisible sans l'interpréter 
+Gist = pastebin = endroit pour coler du code
+Code a envoyer par mail -> mettre le lien du pastebin
+
+=====================================================
+PPTX Path: https://mickael-martin-nevot.com/univ-amu/iut/but-informatique/introduction-a-l-architecture-des-ordinateurs/s39-cm2-1-architecture-d-un-systeme-informatique.pdf
+
+UAL = Unité arithmétique et logique
+Mémoire sans rien = mémoire vive
+
+Si ca marche sur machine de Turing, ca marce sur pc
+ROM: mémoire morte (bios)
+Algèbre de Boole: (diapo 8/28)
+
+Schéma proc:
+	RA = registre d'adresse
+	RD = registre de données
+	UAL manippules les données des registre a et b
+	UE = unités d'échanges
+	BUS = transporte les données
+	CO = compteur ordinal: adresse de la prochaine instruction
+	RI = registre d'instruction
+	Séquenceur = envoie ses commandes aux autres organes de l'unité central
+	H = horloge -> entraîne pb car limite de fréquence d'execution
+
+Sauf Mémoire Central et UE = architecture proc
+DMA = liaison entre RAM et CPU direct
+
+=================================================
+PPTX Path: https://mickael-martin-nevot.com/univ-amu/iut/but-informatique/introduction-a-l-architecture-des-ordinateurs/s39-cm2-3-codage-de-l-information.pdf
+
+Windows utilise pas des Kilo(1000) mais des Kibi(1024)
+
+Film:
+	Futurama
+	Idiocratie
+
+Codage d'image:
+	Formats matriciels: composé de pixels
+	Formats vectoriels: forme géométrique (équation mathématique)
+
+
+#########################################################################################										CM5
+#########################################################################################
+
+RFC: request for comments = document officiel numéroté. Documentation du créateur sur son projet souvent sur des protocols
+
+Topologie de réseau:
+	Topologie = Comment ils sont organisé
+	Anneaux: Pas ouf pck si il y a un noeud qui bug ou se casse, toute la topologie se casse
+	Arbres: bien dans les années 70' mais peut pas avoir 2 racines
+	étoile: centralisé
+	Maillée: très couteaux mais très bon
+	Bus: tombe moins en panne que les autres
+Pour la connexion: filaire >> wifi
+
+Possibilité de questionnement:
+	Piles de protocoles (diapo 7/20)
+
+FAI: fournisseur d'accès internet
+
+UDP: courrier simple
+TCP: courrier avec accusé de recept. 
+ACk = accusé de reception
+
+
+
+
+END

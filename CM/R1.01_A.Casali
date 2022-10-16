@@ -1,0 +1,476 @@
+Initialisation au developpement
+
+Author: Alain Casali
+Website: https://ens.casali.me
+
+
+#########################################################################################										CM1
+#########################################################################################
+
+A:
+	https://discord.gg/YfVCKP6yf3
+	Coef: 20% 
+	60% ressources, 40% SAE
+	Tutorat avec 2eme années 17h45-18H-45
+B. Algo:
+	Algorithme: séquence d'opérations visant a résoundre un pb en temps fini
+C. Exemple:
+	Exo avec le sendwitch nutella, banane en méthodo.
+	1er règle d'or: tout algo est faux mais fait ce qu'on lui demande
+	Exemple erreurs:
+		-Challenger => navette spacial
+		-RDV Appolo & Soyouz (mètres(RU) != pouces(EN))
+D. Types d'actions:
+	-Action simple
+	-  //   conditionelles
+	-  //   répétitive
+	-  //   complexe
+E. Schéma alternatif:
+	Fonc. Coller tube PVC:
+		1. Nettoyer avec papier verre; 
+		2. *Eventuellement dégrésser*;
+		3. Etaler la colle;
+		4. Attendre que ca sèche; //la colle sèche en quelques minutes
+
+	Expression logique: (Vrai ou Faux)
+		si ..., alors
+	Cas générale:
+		Si condition vrai, enchaîner actions:
+			Act. a faire dans tous les cas (vérifications variables)
+			Act.    //   si cond. est vrai
+			Act.    //   si cond. n'est pas vrai
+	Schéma:
+		var1;
+		var2;
+		si (var...)
+			sequ1;
+		sinon
+			sequ2;
+
+		var*: séquenciel 
+		si/ sinon: alternatif
+	Schéma alternatif en cascade:
+		si (cond)
+			sequ1;
+		sinon
+			si (cond)
+				sequ2;
+Expr.		sinon
+log.			si (cond)
+					sequ3;
+				sinon
+					sequ4;
+				fsi
+			fsi
+		fsivar*: séquenciel 
+		si/ sinon: alternatif
+	
+G. Schéma de choix:
+	si (var E ens1)
+		sinon_si (var E ens2)
+			sequ1;
+		sinon_si (var E ens3)
+			sequ2;
+		sinon
+			sequ3;
+	fsi
+	=
+	Choix_sur var entre:
+		cas ens1:
+			sequ1;
+		cas ens2:
+			sequ2;
+		cas ens3:
+			sequ3
+		autre:
+			partir;
+	fsi
+H. Expr. log. complexes:
+	Schéma alternatif imbriqué:
+		si (expr_log_1)
+			si (expr_log_2)
+				sequ_1;
+			fsi
+		fsi
+		sequ_n
+	Opérateur log.:
+	si (expr_log_1 ET expr_log_2)
+		sequ1;
+	fsi
+	sequ_n
+	
+
+#########################################################################################										CM2
+#########################################################################################
+
+PPTX path: pptx/R101-amphi2.pptx
+
+Opérateur ET_ALORS
+	si (Fichier_a_détruire existe ET_ALORS date_creation < 01/01/2022)
+		sequ;
+	fsi
+
+== OU => OU_ALORS
+	= si (non (expr_log_1 ET expr_log_2))
+	= si ((non expr_log1) OU (non expr_log_2))
+!!! Pas utiliser ET et OU mais ET_ALORS et OU_SINON
+
+Déclarer une variable: declarer nom_variriable : Type; 
+Affectation/réafectation d'une variable: nom_variable <- valeur;
+Déclarer constante: declarer K_nom_variable : constante Type <- valeur;
+
+Sémantique variable:
+	declarer super_plombier : délivreur_princesse;
+	super_plombier <- Mario;	Juste
+	super_plombier <- Luidji;	Juste
+	super_plombier <- Link; 	Juste mais sématiquement faux (Link est un délivreur_princesse mais pas un super_plombier)
+
+!!! Les constantes commencent par 'K'
+
+fonction afficher: voir diapo 27
+
+Entiers:
+	modulo(entr1,entr2): reste de division euclidienne
+	rand(entier1,entier2)
+	! division euclidienne
+Réels:
+	3.5 -21.2e12
+	division réel (normal)
+
+
+#########################################################################################										CM3
+#########################################################################################
+
+PPTX path: pptx/R101-amphi3.pptx
+
+Type complexe tableau:
+	Commence a 0 donc 8e case = 7e position
+	Déclaration:
+		declarer nomTab : tableau_de [Taille] typePrimitif
+		exemple:
+			declarer tabReel : tableau_de 10 reel;
+			tabReel[0] <- 10; // accès en écriture
+			tabReel[1] <- 11;
+			afficher (tabReel[0]); // accès lecture
+			afficher (tabReel[10]); // FAUX
+	taille (unTableau) renvoie un nombre réel
+	exemple:
+		afficher(taille(tabReel)); //10
+	allonger(unTab, nbElem); // Allonger la taille du tableau
+	redimenssionner(tabInt, 10); // Donner une nouvelle taille
+	Tronquer = Raccourcir
+Type complexe string:
+	declarer Chaine : string;
+	Chaine <- "AEIOUY\"";
+	Opérateur:
+		taille(Chaine)
+		Relation d'ordre: < <= > >=
+		vaut / ne_vaut_pas
+	Concaténation:
+		Chain <- Chaine + "0123456789";
+!!! si('a' vaut "a") X
+	'a'=caractere "a"=string
+
+Premier algorithme:
+	algorithme afficherBonjour
+	debut
+		afficher ("Hello World!");
+		ligne_suivante;
+	fin
+
+Boucle:
+	boucle
+		attaquer;
+	fboucle
+	!!! Condition d'arrêt
+		boucle
+			attaquer
+			si (victoire) sortie;
+		fboucle
+	!!! Sens d'instruction
+		boucle
+			avancer;
+			si (bordDeFalaise) sortie;      Faux car on tombe
+		fboucle
+		boucle
+			si (bordDeFalaise) sortie;
+			avancer;
+		fboucle
+Boucle tant_que / jusqua:
+	repeter
+		action1;
+		action2;
+	jusqua (CondArrêt)
+
+	tant_que (cond)
+		action2;
+	faire
+		action1;
+	ffaire
+
+	(voir diapo 19)
+
+Si cond d'arrêt touche fboucle => tant_que / jusqua
+
+Indices de tableau = i; j(2D); K(3D)
+
+Faire ses TDs a la maison:
+	Fichier décrivant algo -> Trad. en c++ -> fichier c++ -> executable GNU/Linux
+	Impossible sauf si:
+		-utilisation règles strictes
+		-utilisation d'un compilateur
+
+
+#########################################################################################										CM4
+#########################################################################################
+
+PPTX path:pptx/R101-amphi3.pptx
+
+Portée des variables importantes en Cybersécu
+Pour boucle a compteur, privilégier boucle pour:
+	pas de déclaration/ d'initialisation/ d'incrémentation/ de test d'arrêt
+!!! pas de taille (tabInt)
+Pas de rupture de séquence dans boucle "pour" -> changer de boucle
+
+if (a==0)  /  if (a=0)
+    =			 !=
+if (0==a)  /  if (0=a)
+
+plus tôt est faite l'erreur miuex c'est 
+
+Si variable est déclarer dans la boucle, après fboucle la varibale n'éxistera plus
+
+
+#########################################################################################										CM5
+#########################################################################################
+
+Test casali:
+	Premier étage (bat anglais)
+	Un algo => faire trace 
+	Un algo => trouver les erreurs
+	Faire un algo
+	Docu autorisé: une seule feuille A4 déjà écrite 
+
+Avant propos:
+	Ne pas redev une fonctionnalité si elle est fourni par le language
+		Exeption: demande de redev
+	Justesse de l'algo puis opti
+	être capable d'écrire une docu technique en anglais
+	Toutes variables en anglais DU DEBUT A LA FIN
+	C++ compilator:
+		g++
+		clang
+		VS2017
+	En C++:
+		Tout est appel de fonction ou de méthode
+		Tou est flux
+	C++ exemple:
+		#include <iostream>
+		using namespace std;
+		int main ()
+		{
+			cout << "Hello world" << endl;
+			return 0;
+		}
+	C++ comment:
+		comment by line: //
+		comment: /* */
+		Génération docu automatique (doxygen): /** **/
+	C++ variable declaration:
+		type varIdent; //varIdent (variable identifieur)
+			ex: int i;
+		varIdent = value;
+			ex: i = 10;
+		const type KvarIdent = value;
+			ex: const int Ki = 10;
+		type varIdent = value;
+			int i = 10;
+			int i (10);
+	Variable existe seulement dans le bloc {} dans laquelle elle est déclaré
+	Déclarer que des variables globales pas opti pour sécu
+	Consol input:
+		cin >> varIdent;
+			ex: int i;
+		 	 	cin >> i;
+		prérequis:
+			#include <iostream>
+			using namespace std;
+	Consol output:
+		cout << varIdent;
+			ex: cout << 10; //affiche 10
+				cout << "bonjour"; //afficher bonjour
+		prérequis:
+			#include <iostream>
+			using namespace std;
+		exemple:
+			cout << "chaine de caractère";
+			cout << 2;
+			=
+			cout << "texte ";
+				 << 2;
+			=
+			cout << "texte" << 2 << end1;
+	Space:
+		cout << end1;
+	Opérateur de comparaison:
+		égale: ==
+			ex: i == 10 
+				  ou
+				10 == i 
+		différent: !=
+			ex: i != 10
+		supérieur ou égale: >=
+			ex: i >= 10;
+		<=
+		<
+		>
+	Conditions:
+		if ( condition ) //condition prend une valeur bool
+		{
+			instruction1;
+			instruction2;
+			instruction3;
+		}
+		else if ( condition )
+		{
+			instruction1;
+			instruction2;
+		}
+		else
+		{
+			instruction1;
+			instruction2;
+		}
+	Condition logique:
+		et : &
+		ou : |
+		et_alors : &&
+		ou_sinon : ||
+	Identificateur:
+		bool:
+			valeur: vrai/faux
+			ex: bool toBe;
+			    bool noToBe;
+			    toBe = false;
+			    notToBe = !teBe;
+		int:
+			opérations:
+				+ - * / %
+			% a une priorité plus haute
+		float: réels
+	Opérateur de négation:
+		varIdent1 = !varIdent;
+		unsigned int = entier naturel
+
+	Jamais comparer (==) deux réels entre eux 4.0 != 4.000000001
+
+
+#########################################################################################										CM6
+#########################################################################################
+
+char c = 'a';
+char next = ++c;  //marche
+
+char next = ++'a'; //marche pas
+
+#include <cctype>
+toupper();
+tolower();
+islower();
+isalpha();
+
+site: cplusplus.com
+
+caractere spéciaux:
+	\t //tab
+	\n //saut de ligne
+	\r //retour chariot
+	\'
+
+var.size(); //renvoie taille
+
+pas i++ mais ++i
+
+break;/continue;
+
+case 'A':
+case 'a':  //si A ou a
+
+
+char c;
+cin >> c;
+for (; 'q' != tolower (c); cin>>c)
+{
+	
+}
+
+procedure:
+	void procName (var : [in,out,in_out] type, ...)
+	{
+
+	}
+fonction:
+	returnType foncName (var : [in,out,in-out] type, ...)
+	{
+		return var;
+	}
+
+void nameProc ( const int & min, const int & max , int & res); //const pour in et rien pour out
+
+
+#########################################################################################										CM7
+#########################################################################################
+
+Tri selection
+Tri insertion
+Tri a bulles (opti avec permutation croissante puis décroissante)
+Tri par comptage (dépendant de la mémoire)
+
+Test algo (demande plusieurs lancement pour être juste):
+	temp début
+	appel de fonction
+	temp fin
+	calculer différence entre deux temps
+Mais n'est pas suffisant 
+Sans référence on va copier le tableau donc perte de 20%
+
+Partiel:
+	-15 20 boulettes
+	-Traduction algo C++
+	-
+
+SAE étudier différents systèmes de vote:
+	Faire test avec fichier oracle
+	Implémenter différentes solutions de votes (anonymat pas important)
+		Considerer lapart 1 + choisir min 4 systs de votes a implémenter
+	Video Defekator
+
+	Implémenter 
+	Comprendre 
+	Tester
+
+	Mardi 18 oct grp de TD 5 pers
+
+	Rendu 25 Nov. 23h59 :
+		Rapport pdf + diapo 
+		-1 pt par minutes de retard
+		Copie entre grp = 0 pour les deux 
+
+if ( X < 0.0){
+	var = -X
+} else {
+	var = X
+}
+==
+var = (X < 0.0) ? -X : X
+
+if ( var == 2){
+	return 0;
+} else {
+	return 3;
+}
+==
+return (X < 0.0) ? 0 : 3;
+
+
+END
