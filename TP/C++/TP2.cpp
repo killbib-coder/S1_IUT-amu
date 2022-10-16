@@ -5,7 +5,7 @@ using namespace std;
 
 
 // Exo1
-unsigned TrouveCarDansString (char Caract, string Chaine,unsigned Debut){
+unsigned TrouveCarDansString (const char & Caract, const string & Chaine, const unsigned & Debut){
     unsigned i;
     i = Debut;
     while (i != Chaine.size() and Caract != Chaine[i])
@@ -24,7 +24,7 @@ unsigned TrouveCarDansString (char Caract, string Chaine,unsigned Debut){
 
 
 // Exo2
-unsigned ComptCarac(char Caract, string Chaine){
+unsigned ComptCarac(const char & Caract, const string & Chaine){
     unsigned Cpt = 0;
     for (unsigned i = 0; i < Chaine.size()-1; i++)
     {
@@ -42,7 +42,7 @@ unsigned ComptCarac(char Caract, string Chaine){
 
 
 // Exo3
-unsigned ComptCaracV2(char Caract, string Chaine){
+unsigned ComptCaracV2(const char & Caract, const string & Chaine){
     unsigned Cpt = 0, Pos = 0;
     while (true)
     {
