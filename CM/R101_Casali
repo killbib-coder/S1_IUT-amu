@@ -103,8 +103,6 @@ H. Expr. log. complexes:
 #########################################################################################										CM2
 #########################################################################################
 
-PPTX path: pptx/R101-amphi2.pptx
-
 Opérateur ET_ALORS
 	si (Fichier_a_détruire existe ET_ALORS date_creation < 01/01/2022)
 		sequ;
@@ -140,8 +138,6 @@ Réels:
 
 #########################################################################################										CM3
 #########################################################################################
-
-PPTX path: pptx/R101-amphi3.pptx
 
 Type complexe tableau:
 	Commence a 0 donc 8e case = 7e position
@@ -223,8 +219,6 @@ Faire ses TDs a la maison:
 
 #########################################################################################										CM4
 #########################################################################################
-
-PPTX path:pptx/R101-amphi3.pptx
 
 Portée des variables importantes en Cybersécu
 Pour boucle a compteur, privilégier boucle pour:

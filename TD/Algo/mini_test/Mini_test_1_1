@@ -1,0 +1,42 @@
+algorithme algo1
+debut
+	declarer entree : reel;
+	saisir(entree);
+	si (modulo(entree,2) vaut 0 ET_ALORS non(modulo(entree,3) vaut 0))
+		afficher("la prochaine fois, je me tague comme il faut sur Discord\n");
+		afficher("la prochaine fois, je me tague comme il faut sur Discord\n");
+		afficher("la prochaine fois, je me tague comme il faut sur Discord\n");
+	sinon
+		afficher("Allez l’OM\n");
+		afficher("Allez l’OM\n");
+		afficher("Allez l’OM\n");
+		afficher("Allez l’OM\n");
+		afficher("Allez l’OM\n");
+		afficher("Allez l’OM\n");
+		afficher("Allez l’OM\n");
+	fsi
+fin
+
+ou 
+
+algorithme Multiple2sans3
+début
+    afficher («Saisir un nombre. ») ;
+    declarer Nombre : réel ;
+    saisir (Nombre) ;
+    declarer Phrase: string ;
+    si (modulo(Nombre,2) vaut 0 et_alors modulo(Nombre,3) ne_vaut_pas 0)
+        Phrase <- « la prochaine fois, je me tague comme il faut sur Discord » ;
+        afficher (Phrase) ;
+        afficher (Phrase) ;
+        afficher (Phrase) ;
+    sinon
+        Phrase <- Allez l’OM » ;
+        afficher (Phrase) ;
+        afficher (Phrase) ;
+        afficher (Phrase) ;
+        afficher (Phrase) ;
+        afficher (Phrase) ;
+        afficher (Phrase) ;
+        afficher (Phrase) ;
+fin
