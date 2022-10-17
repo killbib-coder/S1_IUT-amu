@@ -1,5 +1,7 @@
 #include <iostream>
 #include <vector>
+#include <cstdlib>
+#include <time.h>
 using namespace std;
 
 // TD3
@@ -52,9 +54,9 @@ unsigned saisirEntierSupX (const string & Invite, const string & erreur, const u
 unsigned find(const int & Val, const vector<int> & tabInt){
     for (unsigned i = 0; i < tabInt.size(); i++)
     {
-        if(tabInt[i]==Val) return i+1;
+        if(tabInt[i]==Val) return i;
     }
-    return 0;
+    return tabInt.size();
 } void testFind(){
     int Val, posVal;
     vector<int> tabInt = genereTabInt();
@@ -65,8 +67,41 @@ unsigned find(const int & Val, const vector<int> & tabInt){
 }
 
 
+vector<int> genereTabIntAleaSansRedondance(const unsigned & N, const unsigned & M){
+    srand(time(NULL));
+    vector<int> tabInt(1);
+    tabInt[0] = rand()%N;
+    unsigned i = 0;
+    int vAlea;
+    while (i<N-1)
+    {
+        vAlea=rand()%N+1;
+        
+        if (find(vAlea,tabInt)==tabInt.size())
+        {
+            tabInt.resize(tabInt.size()+1);
+            tabInt[tabInt.size()-1] = vAlea;
+            i=i+1;
+        }
+    }
+    return tabInt;    
+} void testGenereTabIntAleaSansRedondance(){
+    unsigned N;
+    cout << "Saisir taille tableau : ";
+    cin >> N;
+    vector<int> tabInt = genereTabIntAleaSansRedondance(N,6);
+    for (unsigned i = 0; i < tabInt.size(); i++)
+    {
+        if(find(tabInt[i], tabInt)== tabInt.size()) 
+            cout << "Erreur";
+    }
+
+    afficheTabInt(tabInt);
+}
+
+
 
 int main(){
-    testFind();
+    testGenereTabIntAleaSansRedondance();
     return 0;
 }
