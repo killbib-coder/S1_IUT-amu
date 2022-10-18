@@ -14,3 +14,9 @@ Cours IUT Aix-en-Provence semestre 1
 
   - [TD4](https://github.com/killbib-coder/S1_IUT-amu/blob/main/TD/Algo/TD4_R1.01.algo)
 
+  - [TD5](https://github.com/killbib-coder/S1_IUT-amu/tree/main/TD/Algo/TD5%20R1.01)
+
+  - [TD6](https://github.com/killbib-coder/S1_IUT-amu/tree/main/TD/Algo/TD6%20R1.01)
+
+  - [TD7](https://github.com/killbib-coder/S1_IUT-amu/tree/main/TD/Algo/TD7%20R1.01)
+
