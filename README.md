@@ -2,7 +2,7 @@
 Cours IUT Aix-en-Provence semestre 1
 
 
-## TD:
+## [TD](https://github.com/killbib-coder/S1_IUT-amu/tree/main/TD):
 
 - [TD R1.08](https://github.com/killbib-coder/S1_IUT-amu/blob/main/TD/R108_Makssoud)
 
