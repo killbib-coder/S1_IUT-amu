@@ -20,3 +20,12 @@ Cours IUT Aix-en-Provence semestre 1
 
   - [TD7](https://github.com/killbib-coder/S1_IUT-amu/tree/main/TD/Algo/TD7%20R1.01)
 
+## TP :
+
+- [TP R1.03](https://github.com/killbib-coder/S1_IUT-amu/blob/main/TP/R103)
+
+- [TP R1.01 C++](https://github.com/killbib-coder/S1_IUT-amu/tree/main/TP/C%2B%2B)
+
+## Project :
+- [Projet R1.01](https://github.com/killbib-coder/S1_IUT-amu/tree/main/Project/R1.01-Project)
+- [Projet R1.08](https://github.com/killbib-coder/S1_IUT-amu/tree/main/Project/R1.08-Project)
