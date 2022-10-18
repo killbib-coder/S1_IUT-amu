@@ -478,7 +478,33 @@ return (X < 0.0) ? 0 : 3;
 CM8
 #########################################################################################
 
+Explication récusivité
+return permet de renvoyé le calcule pour remonter dans les fonctions précédentes
+appel de fonction avec mémorisation des variables = contexte
+Récursivité croisée / mutuelle:
+	FonctionA fait appel a FonctionB et l'inverse
+Privilégier boucle qu'appel récursif
+Quand deux appel de récusivité : pas de lancement de boucle
+Pour plus de rapidité:
+	mémorisation de resultat pour ne pas les refaire sauf que bcp utilisation mémoire
+	limiter les appels 
 
+Opérateurs math:
+	i += expr // = i = i + expr
+	i -=      ~         ~   
+	!!! i -= incr - 1 == i = i - (incr - 1) == i = i - incr + 1
+	!!! i *= incr / 2 == i = i * (incr / 2) == i = i * incr /2
+Opérateurs ++/--:
+	Pos-incrémentation:
+		i = i + 1 == i += 1 == ++i
+		cout << str[++i] //i=i+1
+		cout << str[++i] //i=i+1+1
 
+		cout << str[++i] << str[++i] //parcours de droite a gauche or ca affiche de gauche a droite
+			affiche : str[i+1+1] str[i+1]
+	Pre-décrémentation:
+		cout << str[i++] // incrémentation après affichage
+
+	Privilégier ++i dans boucle for
 
 END
