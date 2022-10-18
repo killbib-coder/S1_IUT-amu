@@ -31,3 +31,7 @@ Cours IUT Aix-en-Provence semestre 1
 - [CM R1.01 A.Casali](https://github.com/killbib-coder/S1_IUT-amu/blob/main/CM/R101_Casali)
 - [CM R1.03 M.Nevot](https://github.com/killbib-coder/S1_IUT-amu/blob/main/CM/R103_Nevot)
 - [CM R1.08 C.Makssoud](https://github.com/killbib-coder/S1_IUT-amu/blob/main/CM/R108_Makssoud)
+
+## Extra :
+- [Algo - C++ R101](https://github.com/killbib-coder/S1_IUT-amu/blob/main/Autre/Algo%20-%20C%2B%2B/TD4_R101.cpp)
+- [Notes Cours](https://github.com/killbib-coder/S1_IUT-amu/blob/main/note)
