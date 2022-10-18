@@ -25,3 +25,8 @@ Cours IUT Aix-en-Provence semestre 1
 ## Correction partiel :
 - ### R1.01
   - [Partiel 1](https://github.com/killbib-coder/S1_IUT-amu/blob/main/Correction/Partiel1_R101)
+
+## Cours magistraux : 
+- [CM R1.01 A.Casali](https://github.com/killbib-coder/S1_IUT-amu/blob/main/CM/R101_Casali)
+- [CM R1.03 M.Nevot](https://github.com/killbib-coder/S1_IUT-amu/blob/main/CM/R103_Nevot)
+- [CM R1.08 C.Makssoud](https://github.com/killbib-coder/S1_IUT-amu/blob/main/CM/R108_Makssoud)
