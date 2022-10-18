@@ -8,7 +8,7 @@ Cours IUT Aix-en-Provence semestre 1
 
 - [TD R1.11](https://github.com/killbib-coder/S1_IUT-amu/blob/main/TD/R111_Salou)
 
-- #### TD R1.01 algo
+- #### [TD R1.01](https://github.com/killbib-coder/S1_IUT-amu/tree/main/TD/Algo)
 
   - [TD3](https://github.com/killbib-coder/S1_IUT-amu/blob/main/TD/Algo/TD3_R1.01.algo)
 
