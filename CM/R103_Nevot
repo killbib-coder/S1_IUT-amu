@@ -4,7 +4,8 @@ Author: Martin Nevot
 Website: https://www.mickael-martin-nevot.com
 
 
-#########################################################################################										CM1
+#########################################################################################										
+CM1
 #########################################################################################
 
 Evaluation:
@@ -61,7 +62,8 @@ Schéma commande:
 	cmd -opt1opt2 par1 par2
 
 
-#########################################################################################										CM2
+#########################################################################################										
+CM2
 #########################################################################################
 
 Intro. aux SE et leur fonctionnement:
@@ -116,7 +118,8 @@ Variable d'environnement: (voir 19/25)
 	$HOME => $: pour récupérer la valeur
 
 
-#########################################################################################										CM3
+#########################################################################################										
+CM3
 #########################################################################################
 
 PPTX path: https://mickael-martin-nevot.com/univ-amu/iut/but-informatique/introduction-aux-systemes-d-exploitation-et-a-leur-fonctionnement/s42-cm1-systemes-d-exploitation-et-shell.pdf
@@ -182,7 +185,8 @@ Aide pour mail (diapo 10/27)
 Nouvelle forme d'illétrisme: jeune ne sachant pas se servir d'un ordi
 
 
-#########################################################################################										CM4
+#########################################################################################										
+CM4
 #########################################################################################
 
 PPTX path: https://mickael-martin-nevot.com/univ-amu/iut/but-informatique/introduction-aux-systemes-d-exploitation-et-a-leur-fonctionnement/s42-cm2-2-applications.pdf
@@ -233,7 +237,8 @@ Codage d'image:
 	Formats vectoriels: forme géométrique (équation mathématique)
 
 
-#########################################################################################										CM5
+#########################################################################################										
+CM5
 #########################################################################################
 
 RFC: request for comments = document officiel numéroté. Documentation du créateur sur son projet souvent sur des protocols
