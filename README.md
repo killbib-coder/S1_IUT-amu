@@ -21,3 +21,7 @@ Cours IUT Aix-en-Provence semestre 1
 ## Project :
 - [Projet R1.01](https://github.com/killbib-coder/S1_IUT-amu/tree/main/Project/R1.01-Project)
 - [Projet R1.08](https://github.com/killbib-coder/S1_IUT-amu/tree/main/Project/R1.08-Project)
+
+## Correction partiel :
+- ### R1.01
+  - [Partiel 1](https://github.com/killbib-coder/S1_IUT-amu/blob/main/Correction/Partiel1_R101)
