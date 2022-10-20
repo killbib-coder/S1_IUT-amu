@@ -9,3 +9,17 @@ debut
     ffaire
     renvoie resultat;
 fin
+
+// Correction
+fonction estBienTrie (tab : in tableau_de entier) renvoie booleen
+debut
+    declarer i : entier_naturel <- 1;
+    tant_que (i < taille(tab))
+    faire
+        si (tab[i-1] > tab[i])
+            renvoie faux;
+        fsi
+        i <- i+1;
+    ffaire
+    renvoie vrai;
+fin

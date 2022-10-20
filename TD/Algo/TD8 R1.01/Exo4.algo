@@ -6,7 +6,7 @@ debut
     faire
         temp <- tab[i];
         j <- i ;
-        tant_que ( j > 0 et_alors tab[j-1] > x)
+        tant_que ( j > 0 et_alors tab[j-1] > temp)
         faire
             tab[j] <- tab[j-1];
             j <- j - 1 ;
