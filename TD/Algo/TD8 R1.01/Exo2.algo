@@ -1,0 +1,19 @@
+procedure triSelection (tab : in_out tableau_de entier) renvoie booleen
+debut
+    declarer temp : entier <- tab[0];
+    declarer min : entier_naturel;
+    pour (i variant_de 0 a taille(tab)-2) 
+    faire
+        min <- i;
+        pour (j variant_de i+1 a taille(tab)-1) 
+        faire
+            min <- j;
+        ffaire
+        si (min ne_vaut_pas i)
+            temp <- tab[i];
+            tab[i] <- tab[min];
+            tab[min] <- temp;  
+        fsi
+    ffaire
+    renvoie tab;
+fin

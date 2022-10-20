@@ -1,0 +1,18 @@
+procedure triBulles(tab : in_out tableau_de entier)
+debut
+    declarer permut : booleen <- vrai; 
+    declarer passage : entier_naturel <- 0;
+    tant_que (permut vaut vrai)
+    faire  
+        permut <- faux;
+        pour (i variant_de 0 a taille(tab)-1-passage) 
+        faire
+            si (tab[i] > tab[i+1])
+                temp <- tab[i];
+                tab[i] <- tab[i+1];
+                tab[i+1] <- temp;
+            fsi
+        ffaire
+        passage <- passage +1;
+    ffaire
+fin

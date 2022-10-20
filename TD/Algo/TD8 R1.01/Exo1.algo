@@ -1,0 +1,11 @@
+fonction estBienTrie (tab : in tableau_de entier) renvoie booleen
+debut
+    declarer resultat : booleen <- vrai;
+    pour (i variant_de 1 a taille(tab)-1) 
+    faire
+        si (tab[i] < tab[i-1])
+            resultat <- faux;
+        fsi
+    ffaire
+    renvoie resultat;
+fin
