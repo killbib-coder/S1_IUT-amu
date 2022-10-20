@@ -1,0 +1,32 @@
+procedure triParComptage ( tab : in_out tableau_de entier)
+debut
+    declarer borneSuperieur : entier_naturel <-0 ;
+    declarer tabtrier : tableau_de taille(tab) entier;
+    pour (i variant_de 0 a taille(tab)-1)
+    faire
+        si  (tab[i] > borneSuperieur )
+            borneSuperieur <- tab[i];
+        fsi
+    ffaire
+
+    pour ( i variant_de 0 a borneSuperieur) 
+    faire
+        tabtrier[i]<-0;
+    ffaire
+
+    pour ( i variant_de 0 a taille(tab)-1)
+    faire
+        tabtrier[i] <- tabtrier[i]+1;
+    ffaire
+
+    declarer cpt : entier_naturel <- 0;
+    pour ( i variant_de 0 a taille(tab)-1)
+    faire
+        pour (j variant_de 0 a tabtrier[i])
+        faire
+            tab[cpt] <- i;
+            cpt <- cpt +1;
+        ffaire
+    ffaire
+
+fin
