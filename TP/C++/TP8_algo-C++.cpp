@@ -63,28 +63,27 @@ void triInsertion (vector<int> & tab){
 }
 
 void triParComptage (vector<int> & tab){
-    unsigned borneSuperieur =0;
-    vector<int> tabTrie(tab.size());
+    int min =tab[0],max=tab[0],pointeur=0;
     for (size_t i = 0; i < tab.size(); i++)
     {
-        if (tab[i] > borneSuperieur) borneSuperieur=tab[i];    
+        if(tab[i]<min) min = tab[i];
+        else if (tab[i]>max) max = tab[i];
     }
-    for (size_t i = 0; i < borneSuperieur; i++) tabTrie[i]=0;
-    for (size_t i = 0; i < tab.size(); i++)tabTrie[i]=tabTrie[i]+1;
-    unsigned cpt = 0;
-    for (size_t i = 0; i < tab.size(); i++)
+    vector<int> tab2(max-min,0);
+    for (size_t i = 0; i < tab.size(); i++) ++tab2[tab[i]-min];
+    for (size_t i = 0; i <= tab2.size(); i++)
     {
-        for (size_t j = 0; j < tabTrie[i]; j++)
+        for (size_t j = 0; j < tab2[i]; j++)
         {
-            tab[cpt]=i;
-            ++cpt;
-        }        
+            tab[pointeur]=i+min;
+            ++pointeur;
+        }
     }
 }
 
 int main(){
     vector<int> tabTest{1,4,5,2,7,6};
-    triABulle(tabTest); 
+    triParComptage(tabTest); 
     cout << tabTest[0] << tabTest[1] << tabTest[2]<< endl;
     cout << estBienTrie(tabTest);
 }
