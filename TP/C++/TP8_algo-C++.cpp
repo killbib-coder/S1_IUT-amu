@@ -15,7 +15,7 @@ bool estBienTrie(const vector<int> & tab){
 void triSelection (vector<int> & tab){
     int temp = tab[0];
     unsigned min;
-    for (size_t i = 0; i < tab.size()-1; i++)
+    for (size_t i = 0; i < tab.size(); i++)
     {
         min=i;
         for (unsigned j = 0; i+1 < tab.size(); i++)
@@ -54,7 +54,7 @@ void triBulles (vector<int> & tab){
 void triInsertion (vector<int> & tab){
     int temp;
     unsigned j;
-    for (size_t i = 0; i < tab.size(); i++)
+    for (size_t i = 1; i < tab.size(); i++)
     {
         temp = tab[i];
         j=i;
@@ -87,3 +87,8 @@ void triParComptage (vector<int> & tab){
     }
 }
 
+int main(){
+    vector<int> tabTest{1,4,5,2,7,6};
+    triInsertion(tabTest); 
+    cout << tabTest[0] << tabTest[1] << tabTest[2];
+}
