@@ -1,6 +1,5 @@
-fonction triInsertion (tab : in_out tableau_de entier) renvoie tableau_de entier
+procedure triInsertion (tab : in_out tableau_de entier)
 debut
-
     declarer temp : entier ;
     declarer j : entier_naturel;
     pour ( i variant_de 1 a taille(tab)-1)
