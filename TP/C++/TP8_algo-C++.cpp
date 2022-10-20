@@ -2,8 +2,8 @@
 using namespace std;
 #include <vector>
 
-bool estBienTrie(const vector<int> & tab){
-    unsigned i = 0;
+bool estBienTrie(vector<int> & tab){
+    unsigned i = 1;
     while (i < tab.size())
     {
         if (tab[i-1] > tab[i]) return false;
@@ -12,15 +12,17 @@ bool estBienTrie(const vector<int> & tab){
     return true;    
 }
 
+
 void triSelection (vector<int> & tab){
-    int temp = tab[0];
+    int temp;
+    temp = tab[0];
     unsigned min;
-    for (size_t i = 0; i < tab.size(); i++)
+    for (size_t i = 0; i < tab.size()-1; i++)
     {
         min=i;
-        for (unsigned j = 0; i+1 < tab.size(); i++)
+        for (unsigned j = i+1; j < tab.size(); j++)
         {
-            min=j;
+            if(tab[j] < tab[min]) min=j;
         }
         if (min != i)
         {
@@ -31,23 +33,16 @@ void triSelection (vector<int> & tab){
     }
 }
 
-void triBulles (vector<int> & tab){
-    bool permut = true;
-    unsigned passage = 0;
-    int temp;
-    while (permut==true)
-    {
-        permut=false;
-        for (unsigned i = 0; i < tab.size()-passage; i++)
-        {
-            if (tab[i] > tab[i+1])
-            {
-                temp=tab[i];
-                tab[i]=tab[i+1];
-                tab[i+1]=temp;
+void triABulle(vector<int> & tab ){
+    unsigned temp;
+    for (unsigned i = 0; i<tab.size() ; i++ ){
+        for (unsigned j = 0 ; j<tab.size()-1 ; j++){
+            if (tab[j] > tab[j+1]){
+                temp = tab[j];
+                tab[j] = tab[j+1];
+                tab[j+1] = temp;
             }
         }
-        ++passage;
     }
 }
 
@@ -89,6 +84,7 @@ void triParComptage (vector<int> & tab){
 
 int main(){
     vector<int> tabTest{1,4,5,2,7,6};
-    triInsertion(tabTest); 
-    cout << tabTest[0] << tabTest[1] << tabTest[2];
+    triABulle(tabTest); 
+    cout << tabTest[0] << tabTest[1] << tabTest[2]<< endl;
+    cout << estBienTrie(tabTest);
 }
