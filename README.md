@@ -1,7 +1,7 @@
 # S1_IUT-amu
 Cours IUT Aix-en-Provence Semestre 1
 
-![IUT Image](https://www.google.com/url?sa=i&url=https%3A%2F%2Ffr.wikipedia.org%2Fwiki%2FInstitut_universitaire_de_technologie_d%2527Aix-Marseille&psig=AOvVaw0tjlhIJ5k9GbhiQUh8fZzN&ust=1666638282796000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCKCEqsiF9_oCFQAAAAAdAAAAABAJ)
+![IUT Image](Autre/Univ_Aix-Marseille_-_IUT.svg.png)
 
 ## Téléchargement :
 ```
