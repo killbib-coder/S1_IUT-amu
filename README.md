@@ -1,7 +1,6 @@
+![IUT Image](Autre/Univ_Aix-Marseille_-_IUT.svg.png)
 # S1_IUT-amu
 Cours IUT Aix-en-Provence Semestre 1
-
-![IUT Image](Autre/aix1_ely9428-scaled.jpg)
 
 ## Téléchargement :
 ```
