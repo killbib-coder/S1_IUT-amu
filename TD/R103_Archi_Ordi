@@ -1,0 +1,15 @@
+1. Suppose a password is chosen as a concatenation of four lower-case dictionary words, where each word is selected uniformly at random from a dictionary of size 100,000. An example of such a password is correcthorsebatterystaple. How many bits of entropy does this have?
+
+2. Consider an alternative scheme where a password is chosen as a sequence of 8 random alphanumeric characters (including both lower-case and upper-case letters). An example is rg8Ql34g. How many bits of entropy does this have?
+
+3. Which is the stronger password?
+
+4. Suppose an attacker can try guessing 10,000 passwords per second. On average, how long will it take to break each of the passwords?
+
+
+1. log2(26**25) = log(26**25)/log(2) = 117.511 bits carac par carac
+   log2(100000**4) = 66.439 bits avec dictionnaire
+2. lower-case, upper-case, number : 26*2+10 = 62 possibilities donc log2(62**8) = 47.634 bits
+3. Le mot de passe le plus fort est le premier car il contient plus de bits
+4. (2**66)/(10000*60*60*24*365) 10000 essais/sec * 60 pour secondes * 60 pour minutes * 24 pour heures * 365 pour jours
+   ~= 233 976 967 années
