@@ -2,7 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "TP6"
+			"path" : "TP6.exe"
+		},
+		{
+			"path" : "TP6.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -68,12 +71,16 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
 	"name" : "TP6",
-	"nameOnDisk" : "TP6",
+	"nameOnDisk" : "TP6.exe",
 	"paths" : 
 	{
 		"build" : ".",

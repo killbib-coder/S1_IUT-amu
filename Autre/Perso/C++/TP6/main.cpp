@@ -82,9 +82,11 @@ vector<string> Delete(vector<string> & VString, const unsigned PosBeg){
 }
 vector<string> Insert(vector<string> & VString, const unsigned & PosBeg, const string & Line){
     VString.resize(VString.size()+1);
-    for (int i = PosBeg; i < VString.size()-1; ++i) {
-        VString[i+1]=VString[i];
+    for (int i = VString.size()-1; i > PosBeg; --i) {
+        VString[i]=VString[i-1];
     }
+    VString[PosBeg]=Line;
+    return VString;
 }
 
 
@@ -123,12 +125,20 @@ void choix(vector<string> & TabFile){
         cin >> PosBeg;
         result = Delete(TabFile,PosBeg);
         afficheTableau(result);
+    } else if (answer=="insert") {
+        unsigned PosBeg;
+        string Line;
+        cin >> PosBeg;
+        cin >> Line;
+        result = Insert(TabFile,PosBeg,Line);
+        afficheTableau(result);
     }
 }
 
 int main(int argc, char *argv[])
 {
-    vector<string> TabFile = FileToVectString("/home/user/CLionProjects/TP6/LaFontaine.txt");
+    //vector<string> TabFile = FileToVectString("/home/user/CLionProjects/TP6/LaFontaine.txt");
+    vector<string> TabFile = FileToVectString("C:\\Users\\killb\\Documents\\GitHub\\S1_IUT-amu\\Autre\\Perso\\C++\\TP6\\LaFontaine.txt");
     choix(TabFile);
     return 0;
 }
