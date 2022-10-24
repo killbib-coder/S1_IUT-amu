@@ -1,0 +1,15 @@
+fonction chiffrementParTransposition(phraseACrypter : string) renvoie string
+debut
+    declarer cle : tableau_de 5 entier_naturel;
+    pour (i variant_de 0 a taille(cle)-1) 
+    faire
+        afficher("Saisir clé de chiffrement : ");
+        saisir(cle[i]);
+    ffaire
+    declarer phraseCrypte : string;
+    pour (i variant_de 0 a taille(phraseACrypter)-1) 
+    faire
+        phraseCrypte[i] <-  phraseACrypter[cle[i]];
+    ffaire
+
+fin
