@@ -1,0 +1,13 @@
+/home/user/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/user/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/bin/ninja/linux/ninja -G Ninja -S /home/user/CLionProjects/M1102_TP6 -B /home/user/CLionProjects/M1102_TP6/cmake-build-debug
+-- Configuring done
+CMake Error at CMakeLists.txt:6 (add_executable):
+  Cannot find source file:
+
+    ToLower.cpp
+
+
+CMake Error at CMakeLists.txt:6 (add_executable):
+  No SOURCES given to target: M1102_TP6
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
