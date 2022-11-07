@@ -1,0 +1,31 @@
+//Q1: C'est quoi un palindrôme 
+      //Un mot qui se lit dans les deux sens ex: kayak, laval, elle, ...
+//Q2: Ecrire un prédicat qui dit si un mot, passé en paramètre, est un palindrôme
+//Q2.1: De manière itérative
+//Q2.2: De manière récursive simple
+
+fonction estUnPalindrome(chaine : in string) : renvoie booleen
+debut
+    si (taille(chaine) vaut 0)
+        renvoie vrai;
+    fsi
+    declarer i : entier_naturel <- 0;
+    tant_que (i < taille(chaine))
+    faire
+        si (chaine[i] ne_vaut_pas chaine[taille(chaine)-i]-1)
+            renvoie faux;
+        fsi
+    ffaire
+    renvoie vrai;
+fin
+
+fonction estUnPalindromeRecursif(mot : in string, i : in entier_naturel) : renvoie booleen
+debut
+    si (taille(chaine) <= 1)
+        renvoie vrai;
+    sinon_si ( chaine[0] ne_vaut_pas chaine[taille(chaine)-1] )
+        renvoie faux;
+    sinon 
+        renvoie recPalindrome(tronquage(chaine));
+    fsi
+fin
