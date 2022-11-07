@@ -1,8 +1,11 @@
 fonction valNbRomain (mot : in string, pos : in entier_naturel) renvoie entier_naturel
 debut
+    si (pos vaut taille(mot)-1)
+        renvoie valChRomain(mot[pos]);
+    fsi
     si (valChRomain(mot[pos]) >= valChRomain(mot[pos+1]))
-        renvoie
+        renvoie valNbRomain(mot, pos+1) + valChRomain(mot[pos]);
     sinon 
-        renvoie
+        renvoie valNbRomain(mot, pos+1) - valChRomain(mot[pos]);
     fsi
 fin
