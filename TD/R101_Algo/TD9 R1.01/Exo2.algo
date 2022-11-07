@@ -1,0 +1,8 @@
+fonction puissEntRecurs(x : in reel, n : in entier) : renvoie reel
+debut
+    si (n vaut 0) renvoie 1;
+    sinon_si (x vaut 0) renvoie 0;
+    sinon_si (n<0) renvoie 1 / puissEntRecurs(x, -n);
+    sinon renvoie x * puissEntRecurs(x, n-1);
+fin
+
