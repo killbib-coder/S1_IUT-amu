@@ -507,4 +507,60 @@ Opérateurs ++/--:
 
 	Privilégier ++i dans boucle for
 
+
+#########################################################################################										
+CM9
+#########################################################################################
+
+études struct et flux de fichiers
+Flux = fichier ou entré clavier
+
+c.ignore(numeric_limits<streamsize>::max(), '\n');
+eof = fin de fichier
+fail = erreur
+bad = erreur de flux
+good = le flux est ok
+
+S2 cours d'interface graphique
+
+Prérequis:
+	apt install freeglut3-dev
+	github alain13100 MinGL2_IUT_AIX.git
+
+Création fenêtre:
+	pixel largeur, hauteur et nom
+	minGL window (400, 200, "Ma fenêtre");
+	window.initGlut();
+	window.initGraphic();
+	window.updateGraphic();
+	struct pixel{pos aPos; RGBcolor color;};
+	window.setpixel(pos(10,10), RGBcolor(0,0,0));
+	window.get_key(); //pour ne pas fermer la fenêtre mais attentre
+
+	triangle tri (pos(50,50), pos(100,50), pos(83,15), KBlack, KBlack);
+	window << tri;
+	window.updateGraphic();
+
+	circle cir (pos(50, 50), 50, KBlack, KYellow);
+	window << cir;
+	window.updateGraphic;
+
+	rectangle rec (pos(1,1), pos(10,10), KBlue, KRed);
+	~
+	~
+
+	figure varIdent; //Tableau de figure;
+	varIdent.add(cirecle(~ ~ ~));
+
+	window << varIdent + pos (100, 100);
+
+	window.clearscreen()
+
+
+#########################################################################################										
+CM10
+#########################################################################################
+
+
+
 END
