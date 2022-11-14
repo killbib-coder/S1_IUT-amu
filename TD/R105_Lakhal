@@ -64,8 +64,20 @@ TD2
 	R6 = division (R5, R3 / nomav, nomav)
 	R7 = jointure (pilote, numpil=numpil)
 	R8 = projection (R7, nompil, ADR)
-10) R1 = 
-	R2 = 
+10) R1 = projection (formation, numpil)
+	R2 = projection (pilote, numpil)
+	R3 = difference (R2, R1)
+	R4 = jointure (R5, pilote / numpil=numpil)
+	R5 = projection (R4, nompil, ADR)
+11) Non car un seul appart
+12) code_p ne doit pas être changé sans changer appartement
+13) oui dans deux locataires ou propriétaires peuvent avoir les mêmes noms
+14) R1 = selection (proprio / nom='Martin')
+	R2 = selection (R1 / prenom='Jean')
+	R3 = jointure (R2, Appart / codeL=code)
+	R4 = selection (R3, num, type)
+
+
 
 
 Uni-compatible = mm nb d'attribut + attribut respectif comparable
