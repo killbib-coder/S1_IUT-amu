@@ -1,3 +1,7 @@
+##################################################
+TD1
+##################################################
+..) voir feuille
 18) R1 = selection ( pilote/nonpil = martin )
 	R2 = jointure ( pilote, R1/adr = adr )
 	R3 = projection ( R2, numpil, nompil, numpil )
@@ -19,10 +23,51 @@
 	R3 = projection (pilote, numpil)
 	R4 = difference (R3, R2)
 	R5 = jointure (pilote, R4 / numpil=numpil)
-	R6 = prejection (R5, numpil, nompil)
+	R6 = projection (R5, numpil, nompil)
 22) R1 = projection (pilote, ADR)
 	R2 = projection (vol, ville_dep)
 	R3 = difference (R1,R2)
 
+##################################################
+TD2
+##################################################
+01) Oui si la date est différente (clé primaire)
+02) Non car la même date est pas possible (clé primaire)
+03) Numpil + date + type_f
+04) R1 = projection (vol, numpil, numav)
+	R2 = projection (pilote, numpil)
+	R3 = division (R1, R2 / numpil=numpil)
+	R4 = jointure (R3, avion / numav=numav)
+	R5 = projection (R4, numav, nomav)
+05) R1 = jointure (vol, avion / numav=numav)
+	R2 = projection (vol, nomav, ville_arr)
+	R3 = projection (avion, nomav)
+	R4 = division (R1, R2 / nomav=nomav)
+06) R1 = selection (pilote / nompil='Dupond')
+	R2 = jointure (R1, formation / numpil=numpil)
+	R3 = jointure (R2, stage / type_f=type_f)
+	R4 = projection (R3, nomav)
+07) R1 = projection (avion, numav)
+    R2 = jointure (formation, stage | type_f = type_f)
+    R3 = projection (R2, numpil,nomav)
+    R4 = division (R3,R1 | nomav = nomav)
+    R5 = jointure (pilote, R4 | numpil = numpil)
+    R6 = projection (R5, nompil) 
+08) R1 = projection (vol, ville_dep, ville_arr)
+	R2 = projection (vol, ville_dep)
+	R3 = division (R1, R2 / ville_dep, ville_dep)
+09) R1 = selection (formation / numpil=104) 
+	R2 = jointure (R1, stage / type_f=type_f)
+	R3 = projection (R2, nomav)
+	R4 = jointure (formation, stage / type_f=type_f)
+	R5 = projection (R4, numpil=numav)
+	R6 = division (R5, R3 / nomav, nomav)
+	R7 = jointure (pilote, numpil=numpil)
+	R8 = projection (R7, nompil, ADR)
+10) R1 = 
+	R2 = 
+
 
 Uni-compatible = mm nb d'attribut + attribut respectif comparable
+contrainte clé/ de relation = Au moment d'une nouvelle insertion les clé primaire ne se repète pas 
+contrainte de domaine = Bon format de l'entré par rapport au type
