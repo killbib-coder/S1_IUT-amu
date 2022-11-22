@@ -563,4 +563,15 @@ CM10
 
 
 
+#########################################################################################										
+CM12
+#########################################################################################
+
+Pas droit aux flux donc ./a.out < NomDuFichierEntree > NomDuFichierSortie
+1 ligne par nom, 1 ligne par prénom dans fichier entree (données dans le discord)
+On va se demandé si fichOracle == NomDuFichierSortie : diff fichOracle NomDuFichierSortie
+Obligation d'avoir les noms dans le fichier entree et vote peuvent être consécutif a la fin du fichier
+
+
+
 END
