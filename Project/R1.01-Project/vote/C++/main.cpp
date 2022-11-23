@@ -1,40 +1,37 @@
-#include<iostream>
-#include<vector>
+#include <iostream>
+#include <vector>
 using namespace std;
 
-
-
 int main(){
-    unsigned nbElec,nmCandidat,choix,nbCandid;
-    cout << "combien de candidat : ";
-    cin >> nbCandid;
-    cout << "combien d'électeur : ";
-    cin >> nbElec;
-    vector<unsigned> lsCandid (nbCandid);
-    for (unsigned i = 0; i < lsCandid.size(); ++i) lsCandid[i]=0;
-    for(unsigned i = 0; i < nbElec;i++){
-        cout << "Numéro du candidat de 1 a " << nbCandid << " : ";
-        cin >> nmCandidat ;
-        nmCandidat--;
-        cout << "Votez pour tapez 1" << endl
-             << "Votez contre tapez 2" << endl
-             << "Votre choix : ";
-        cin >> choix;
-        if (choix == 1){
-            lsCandid[nmCandidat]++;
-        }
-        else if (choix == 2 && nmCandidat > 0){
-            lsCandid[nmCandidat]--;
-        }
+
+    string str, temp;
+    unsigned nbelecteur(0);
+    cin >> str;
+    nbelecteur=stoi(str);
+    vector<string> noms(nbelecteur);
+    vector<string> vote(nbelecteur);
+    unsigned cptVote=0;
+    for (size_t i = 0; i < nbelecteur; i++)
+    {
+        cin >> str;
+        temp=str;
+        cin >> str;
+        noms[i]=temp+" "+str+" ";
+        cin >> str;
+        vote[cptVote]=str;
+        cptVote++;
     }
-    unsigned max = 0,pos=0;
-    size_t i =0;
-    for(; i < lsCandid.size(); ++i){
-        if(lsCandid[i]>max){
-            max = lsCandid[i];
-            pos=i+1;
-        }
+
+    //afficher vecteurs
+    for (size_t i = 0; i < noms.size(); i++)
+    {
+        cout << noms[i];
     }
-    cout << "Le candidat élu est le numéro " << pos << endl;
+    cout << endl;
+    for (size_t i = 0; i < vote.size(); i++)
+    {
+        cout << vote[i];
+    }
+    
     return 0;
 }
