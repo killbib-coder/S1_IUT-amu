@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <fstream>
+#include <algorithm>
 using namespace std;
 
 void affichVInt (const vector <int> & VInt){
@@ -66,23 +67,32 @@ void triSelection (vector<int> & tab){
     }
 }
 
-void triSelectionIter (vector<int> & tab){
-    int temp = tab[0];
-    unsigned min;
-    unsigned cpt=0;
-    for (auto it = begin(tab); it != end(tab); ++it)
-    {
-        min=cpt;
-        for (auto it2 = begin(tab)+1; it2 != end(tab); ++it2){
-            
-        }
+template< typename T >
+void triSelectionIter( T & VInt ){
+	typename T::iterator min, jt, temp;
+	for( typename T::iterator it = VInt.begin(); it < VInt.end()-1; ++it )
+	{
+		min = it;
+		for( jt = it+1; jt < VInt.end(); ++jt )
+		{
+			if( *jt < *min )min = jt;
+		}
+		if( min != it ) swap( *it, *min );
+	}
+}
+
+template< typename T >
+void selectSort(vector<T> & VInt ){
+    for(auto it (VInt.begin()); it < VInt.end(); ++it){
+        swap(*it, *min_element(it, VInt.end()));
     }
 }
 
 int main(){
     // int nombre;
     // extractionsGenerique(nombre);
-    vector<int> VInt{1,2,3,4,5,6,7,8};
-    affichVIntIterrator(VInt);
+    vector<int> VInt{1,4,3,2,5,6,7,8};
+    selectSort(VInt);
+    affichVector(VInt);
     return 0;
 }
