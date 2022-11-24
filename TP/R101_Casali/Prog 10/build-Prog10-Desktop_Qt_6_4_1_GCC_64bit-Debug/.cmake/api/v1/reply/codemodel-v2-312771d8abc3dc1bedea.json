@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-c28a20b442bdd06e8433.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Prog10",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Prog10::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Prog10-Debug-2b97ef25d763b62aa73b.json",
+					"name" : "Prog10",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Prog10_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Prog10_autogen-Debug-e2a1633005a70f5d0c3f.json",
+					"name" : "Prog10_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Prog10_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Prog10_autogen_timestamp_deps-Debug-a62d3f1eccb1af2cf136.json",
+					"name" : "Prog10_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/user/Documents/S1_IUT-amu/TP/R101_Casali/build-Prog10-Desktop_Qt_6_4_1_GCC_64bit-Debug",
+		"source" : "/home/user/Documents/S1_IUT-amu/TP/R101_Casali/Prog10"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

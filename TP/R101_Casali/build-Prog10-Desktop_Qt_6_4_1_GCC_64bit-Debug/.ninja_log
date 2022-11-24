@@ -1,0 +1,14 @@
+# ninja log v5
+0	20	1669279083984133086	Prog10_autogen/timestamp	b5fa6754e19e8a91
+0	20	1669279083984133086	Prog10_autogen/mocs_compilation.cpp	b5fa6754e19e8a91
+0	20	1669279083984133086	/home/user/Documents/S1_IUT-amu/TP/R101_Casali/build-Prog10-Desktop_Qt_6_4_1_GCC_64bit-Debug/Prog10_autogen/timestamp	b5fa6754e19e8a91
+0	20	1669279083984133086	/home/user/Documents/S1_IUT-amu/TP/R101_Casali/build-Prog10-Desktop_Qt_6_4_1_GCC_64bit-Debug/Prog10_autogen/mocs_compilation.cpp	b5fa6754e19e8a91
+21	36	1669279084000133087	CMakeFiles/Prog10.dir/Prog10_autogen/mocs_compilation.cpp.o	220427ff3e00a084
+21	532	1669279084496133101	CMakeFiles/Prog10.dir/main.cpp.o	c0eb0bb622948bc
+533	629	1669279084592133104	Prog10	d26087ad02cc3d6d
+1	9	1669279707940150840	Prog10_autogen/timestamp	b5fa6754e19e8a91
+1	9	1669279707940150840	Prog10_autogen/mocs_compilation.cpp	b5fa6754e19e8a91
+1	9	1669279707940150840	/home/user/Documents/S1_IUT-amu/TP/R101_Casali/build-Prog10-Desktop_Qt_6_4_1_GCC_64bit-Debug/Prog10_autogen/timestamp	b5fa6754e19e8a91
+1	9	1669279707940150840	/home/user/Documents/S1_IUT-amu/TP/R101_Casali/build-Prog10-Desktop_Qt_6_4_1_GCC_64bit-Debug/Prog10_autogen/mocs_compilation.cpp	b5fa6754e19e8a91
+10	595	1669279708524150856	CMakeFiles/Prog10.dir/main.cpp.o	c0eb0bb622948bc
+595	705	1669279708636150859	Prog10	d26087ad02cc3d6d
