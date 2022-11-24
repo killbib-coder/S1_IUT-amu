@@ -3,7 +3,7 @@
 //
 //    Author: Killbib
 //
-//    Version: 1.0
+//    Version: 1.1
 //
 
 #include <iostream>
@@ -118,14 +118,13 @@ void moveToken (CMatrix & Mat, char move, CPosition  & pos){
 
 int ppal(){
     CMatrix Mat;
-    CPosition pos1;
-    CPosition pos2;
+    CPosition pos1, pos2;
     initMat(Mat,10,10,pos1,pos2);
-    unsigned coupMax=10,cptTours=1;
+    unsigned coupMax=10;
     bool victoire=false;
     showMatrix(Mat);
     char deplacement;
-    while(coupMax>cptTours and victoire!=true){
+    while(coupMax>1 and victoire!=true){
         cout << "deplacement joueur 1 : ";
         cin >> deplacement;
         moveToken(Mat,deplacement,pos1);
@@ -144,9 +143,15 @@ int ppal(){
             victoire=true;
             break;
         }
-        ++cptTours;
+        --coupMax;
     }
-    if(cptTours==coupMax) cout << "Le nombre de coup max est atteint" << endl;
+    if(coupMax==1){
+        cout << "Le nombre de coup max est atteint" << endl;
+        cout << "Voulez-vous rejouer ? (o/n) : ";
+        char rep;
+        cin >> rep;
+        if(rep=='o') ppal();
+    }
     return 0;
 }
 
