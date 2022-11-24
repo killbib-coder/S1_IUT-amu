@@ -25,19 +25,22 @@ void extractionsGenerique (T & Val){
 template <typename T>
 bool testSiFichierExists (T & stream){
     string sourcefile;
-    ifstream ifs(stream);
     unsigned i(0);
     for (; i < 3; ++i) {
-        ifs.open(sourcefile);
-        if(ifs) break;
+        cout << "Nom du fichier : ";
+        getline(cin,sourcefile);
+        stream.open(sourcefile);
+        if(stream) break;
     }
     if (i==3){
         std::cout << "3 echecs d'ouverture de fichier en lecture" << std::endl;
-        exit(2);
+        return false;
     }
+    return true;
 }
 
 int main(){
-
+    int nombre;
+    extractionsGenerique(nombre);
     return 0;
 }
