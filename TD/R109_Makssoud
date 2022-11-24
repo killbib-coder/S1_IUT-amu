@@ -43,6 +43,27 @@ S2: L'impacte du numérique sur les modes de consommation et de production
 
 S3: Les marchés des données 
 	I. DCP = Données à caractère personnel
+		= toutes info relative qui peut etre identifier de manière directe ou indirecte:
+		ex: adresse ip = dcp car permet de retrouver la personne qui s'est connecter
+		On peut donc l'id de manière indirecte par le bié de son fournisseur d'accès internet
+		ex: nuléro de sécu car num unique pour chaque personne
+		Connaissance plusieurs info grace au num (h/f date naissance + lieu de naissance)
+		7type:
+			l'id (nom prénom)
+			vie perso (habitudes)
+			vie prof. (travail diplome)
+			status (impots revenue)
+			localisation (adresse tel)
+			judicière (casier)
+			sensible (opinion pol.)
+		DCP concerne que personne physique pas objet/entreprise
+		utilisation de DCP:
+			orga. peuvent récolté données / DCP (ex: vidéo surveillance)
+			photo salarié = DCP
+			CNIL chargé protection des DCP
+			drésser profil type de conso pour achat en ligne (cookies)
+			email=DCP
+
 	II. Big data
 		La définition du Big Data est la suivante : des données plus variées, arrivant dans des volumes croissants et à une vitesse plus élevée. C’est ce que l’on appelle les trois "V" (vitesse, volume, variété).
 		Ces ensembles de données sont si volumineux qu’un logiciel de traitement de données traditionnel ne peut tout simplement pas les gérer. Mais ces énormes volumes de données peuvent être utilisés pour résoudre des problèmes que vous n’auriez jamais pu résoudre auparavant.
@@ -51,7 +72,7 @@ S3: Les marchés des données
 			intégrer: rassemblement de données
 			gérer: stocker les données rassemblé
 			analyser: se servir des données rassemblé et stocké
-		
+
 	III. Opendata
 
 END
