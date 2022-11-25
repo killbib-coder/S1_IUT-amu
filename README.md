@@ -7,7 +7,7 @@ Cours IUT Aix-en-Provence Semestre 1
 ```
 gh repo clone killbib-coder/S1_IUT-amu
 ```
-[R1.01 - Algorithmie et C++](R1.01 - Algo et C++)
+[R1.01 - Algorithmie et C++](/R1.01 - Algo et C++/)
 
 
 - [Notes Cours](note)
