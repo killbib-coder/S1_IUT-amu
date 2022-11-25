@@ -22,7 +22,7 @@ gh repo clone killbib-coder/S1_IUT-amu
 
 [R1.10 - Anglais](R1.10%20-%20Anglais)
 
-[R1.11 - Communication](R1.11%20-%20Communication))
+[R1.11 - Communication](R1.11%20-%20Communication)
 
 ## Extra
 [Dossier autre](Autre)
