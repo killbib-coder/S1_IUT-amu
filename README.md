@@ -25,6 +25,6 @@ gh repo clone killbib-coder/S1_IUT-amu
 [R1.11 - Communication](R1.11%20-%20Communication))
 
 ## Extra
-[Notes Cours](note)
+[Dossier autre](Autre)
 
-[Autre](Autre)
+[Notes Cours](note)
