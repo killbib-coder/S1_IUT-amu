@@ -28,3 +28,7 @@ gh repo clone killbib-coder/S1_IUT-amu
 [Dossier autre](Autre)
 
 [Notes Cours](note)
+
+
+*author: Killian Ferrier*
+*version: 1.1*
