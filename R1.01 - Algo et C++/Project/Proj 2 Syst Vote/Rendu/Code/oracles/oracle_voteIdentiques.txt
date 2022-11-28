@@ -1,0 +1,20 @@
+----------------------------------
+Début du vote uninominatif majoritaire en un tour
+
+
+Le vainqueur est : Counter strike avec 113 points.
+----------------------------------
+Début du vote Methode Borda
+
+
+Le vainqueur est : Street Fighter II avec 113 points.
+----------------------------------
+Début du vote negativ
+
+Le vainqueur est : Street Fighter II avec 113 points.
+----------------------------------
+Début du vote alternatif
+
+Le vainqueur est : Street Fighter II avec 113 points.
+
+----------------------------------

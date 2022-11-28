@@ -1,0 +1,678 @@
+ALI
+Mdallah
+2
+2 3 0 1
+2 1
+2 3 0 1
+AMETTLER
+Thibault
+1
+1 0 3 2
+1 1
+1 0 3 2
+ATROKHOV
+Alexis
+2
+2 3 0 1
+2 1
+2 3 0 1
+ATTAR
+Mohamed-Nadir
+3
+3 2 1 0
+3 1
+3 2 1 0
+AVENA
+Clement
+3
+3 2 1 0
+0 0
+3 2 1 0
+BACHAR
+Bilal
+1
+1 0 3 2
+1 1
+1 0 3 2
+BADJOUDJ
+Hana
+2
+2 3 0 1
+2 1
+2 3 0 1
+BAMAS
+Mathias
+3
+3 2 1 0
+3 1
+3 2 1 0
+BARROSO YELMO
+Mathias
+2
+2 3 0 1
+2 1
+2 3 0 1
+BARTE
+Antonin
+3
+3 2 1 0
+0 0
+3 2 1 0
+BAUDOUY
+Ugo
+2
+2 3 0 1
+2 1
+2 3 0 1
+BEAUQUIER
+Quentin
+3
+3 2 1 0
+3 1
+3 2 1 0
+BEDDIAF
+Miloud
+0
+0 1 2 3
+0 1
+0 1 2 3
+BEDOS
+Enzo
+1
+1 0 3 2
+1 1
+1 0 3 2
+BELABBAS
+Rayane
+2
+2 3 0 1
+2 1
+2 3 0 1
+BENDJEDDOU
+Rayan
+3
+3 2 1 0
+0 0
+3 2 1 0
+BENLAKHLEF
+Medhi
+2
+2 3 0 1
+2 1
+2 3 0 1
+BERGERON
+Alexandre
+1
+1 0 3 2
+1 1
+1 0 3 2
+BIHI
+Ayoub
+2
+2 3 0 1
+2 1
+2 3 0 1
+BOINAALI
+Chris
+3
+3 2 1 0
+0 0
+3 2 1 0
+BOSSO
+Gavril
+2
+2 3 0 1
+2 1
+2 3 0 1
+BOUGEARD
+Bastien
+3
+3 2 1 0
+0 0
+3 2 1 0
+BOUT
+Thomas
+2
+2 3 0 1
+2 1
+2 3 0 1
+BOUYEDA
+Remi
+3
+3 2 1 0
+3 1
+3 2 1 0
+BRADAI
+Chiheb
+2
+2 3 0 1
+2 1
+2 3 0 1
+BRAHMI
+Moundir
+1
+1 0 3 2
+1 1
+1 0 3 2
+BRUNET
+Ronan
+2
+2 3 0 1
+2 1
+2 3 0 1
+CANO
+Vincent
+3
+3 2 1 0
+0 0
+3 2 1 0
+CARON
+Pierrick
+3
+3 2 1 0
+0 0
+3 2 1 0
+CARVAJAL
+Tom
+1
+1 0 3 2
+1 1
+1 0 3 2
+CHOPARD
+William
+2
+2 3 0 1
+2 1
+2 3 0 1
+CLEMENT
+Amadeus
+3
+3 2 1 0
+3 1
+3 2 1 0
+COMBELONGE
+Enzo
+2
+2 3 0 1
+2 1
+2 3 0 1
+CRESPIN
+Alexandre
+1
+1 0 3 2
+1 1
+1 0 3 2
+DA SILVA SANTOS
+Lucas
+2
+2 3 0 1
+2 1
+2 3 0 1
+DAW
+Charles
+3
+3 0 1 2
+3 1 
+3 0 1 2
+DE ANGELI
+Adam
+3
+3 2 1 0
+0 0
+3 2 1 0
+DE SOUSA GUEDES
+Raphael
+2
+2 3 0 1
+2 1
+2 3 0 1
+DEGANO
+Matteo
+2
+2 3 0 1
+2 1
+2 3 0 1
+DELIN
+Alexis
+1
+1 2 0
+1 1
+1 2 0 3
+DELIN
+Maxime
+0
+0 1 2 3
+0 1
+0 1 2 3
+DELMAS
+Mathis
+1
+1 0 3 2
+1 1
+1 0 3 2
+DIOP
+Sokhna
+3
+3 2 1 0
+0 0
+3 2 1 0
+DITLECADET
+Michael
+3
+3 2 1 0
+3 1
+3 2 1 0
+DOLCE
+Lino
+2
+2 3 0 1
+2 1
+2 3 0 1
+DUROISIN
+Tom
+1
+1 0 3 2
+1 1
+1 0 3 2
+ESSALHI
+Ayoub
+2
+2 3 0 1
+2 1
+2 3 0 1
+EVEN
+Tom
+3
+3 2 1 0
+3 1
+3 2 1 0
+FALFERI
+Gabin
+2
+2 3 0 1
+2 1
+2 3 0 1
+FARDOUX
+Theo
+1
+1 0 3 2
+1 1
+1 0 3 2
+FERRANDO
+Alexis
+2
+2 3 0 1
+2 1
+2 3 0 1
+FERRIER
+Killian
+3
+3 2 1 0
+3 1
+3 2 1 0
+FLORIS-MIALHE
+Axel
+2
+2 3 0 1
+2 1
+2 3 0 1
+FREDDI
+Logan
+1
+1 0 3 2
+1 1
+1 0 3 2
+GINER
+Leo
+2
+2 3 0 1
+2 1
+2 3 0 1
+GIORDANO
+Yoann
+3
+3 2 1 0
+3 1
+3 2 1 0
+GIRODENGO
+Camille
+2
+2 3 0 1
+2 1
+2 3 0 1
+GODINAUD
+Maïlys
+1
+1 0 3 2
+1 1
+1 0 3 2
+GOUACHE
+Nathan
+2
+2 3 0 1
+2 1
+2 3 0 1
+HARICOT
+Pierre
+3
+3 2 1 0
+3 1
+3 2 1 0
+HENRICY
+Noah
+0
+0 1 2 3
+0 1
+0 1 2 3
+HOSPITAL
+Jules
+2
+2 3 0 1
+2 1
+2 3 0 1
+HOURLAY
+Enzo
+2
+2 3 0 1
+2 1
+2 3 0 1
+IKHERBANE
+Sami
+3
+3 2 1 0
+3 1
+3 2 1 0
+JAURAS
+Maxime
+0
+0 1 2 3
+0 1
+0 1 2 3
+KHADRAOUI
+Sabri
+1
+1 0 3 2
+1 1
+1 0 3 2
+KUZMENKO
+Yehor
+2
+2 3 0 1
+2 1
+2 3 0 1
+LARTIGAUD
+Elliot
+3
+3 2 1 0
+3 1
+3 2 1 0
+LEBRUN
+Noa
+0
+0 1 2 3
+0 1
+0 1 2 3
+LEPERLIER
+Mael
+2
+2 3 0 1
+2 1
+2 3 0 1
+LEROUGE
+Robin
+2
+2 3 0 1
+2 1
+2 3 0 1
+LEROUX
+Mathieu
+3
+3 2 1 0
+3 1
+3 2 1 0
+LESTRELIN
+Valentin
+0
+0 1 2 3
+0 1
+0 1 2 3
+LIETO
+Myke
+1
+1 0 3 2
+1 1
+1 0 3 2
+LIMOSANI
+Francesco
+2
+2 3 0 1
+2 1
+2 3 0 1
+LOUARN
+Mathis
+3
+3 2 1 0
+3 1
+3 2 1 0
+MAGNAN
+Lukas
+0
+0 1 2 3
+0 1
+0 1 2 3
+MAOULIDA ATTOUMANI
+Yazid-Raoul
+2
+2 3 0 1
+2 1
+2 3 0 1
+MARIE
+Clement
+2
+2 3 0 1
+2 1
+2 3 0 1
+MARTINEZ
+Romain
+3
+3 2 1 0
+3 1
+3 2 1 0
+MESLI
+Mohamed
+2
+2 3 0 1
+2 1
+2 3 0 1
+MISIEK
+Romain
+1
+1 0 3 2
+1 1
+1 0 3 2
+MOMY
+Aurore
+2
+2 3 0 1
+2 1
+2 3 0 1
+MONTANARD
+Hugo
+3
+3 2 1 0
+3 1
+3 2 1 0
+N' GUYEN
+Lucas
+0
+0 1 2 3
+0 1
+0 1 2 3
+NARDI
+Fabio
+2
+2 3 0 1
+2 1
+2 3 0 1
+OGER
+Leo
+2
+2 3 0 1
+2 1
+2 3 0 1
+PIOCT
+Rayan
+3
+3 2 1 0
+3 1
+3 2 1 0
+PONOMARENKO
+Edouard
+0
+0 1 2 3
+0 1
+0 1 2 3
+PORTELLI
+Angelo
+1
+1 0 3 2
+1 1
+1 0 3 2
+POSSENTI
+Alexandre
+2
+2 3 0 1
+2 1
+2 3 0 1
+RAMILSON
+Lorys
+3
+3 2 1 0
+3 1
+3 2 1 0
+RIPOCHE
+Sarah
+2
+2 3 0 1
+2 1
+2 3 0 1
+ROSSI
+Valentin
+1
+1 0 3 2
+1 1
+1 0 3 2
+ROUBAUD
+Axel
+2
+2 3 0 1
+2 1
+2 3 0 1
+ROUGE
+Gabriel
+3
+3 2 1 0
+3 1
+3 2 1 0
+ROUSSET
+Antonin
+2
+2 3 0 1
+2 1
+2 3 0 1
+RUGIERO
+Tymeo
+1
+1 0 3 2
+1 1
+1 0 3 2
+SAFRAN
+Yoni
+2
+2 3 0 1
+2 1
+2 3 0 1
+SALA-MOCHIZUKI
+Yuki
+3
+3 2 1 0
+3 1
+3 2 1 0
+SALOMON
+Clement
+0
+0 1 2 3
+0 1
+0 1 2 3
+SANTOS
+Audran
+1
+1 0 3 2
+1 1
+1 0 3 2
+SCIACCA
+Matteo
+2
+2 3 0 1
+2 1
+2 3 0 1
+SEJOURNE
+Victor
+3
+3 2 1 0
+3 1
+3 2 1 0
+SOLLE
+Mathis
+2
+2 3 0 1
+2 1
+2 3 0 1
+SOUDANI REGUIG
+Lyes-Yacine
+1
+1 0 3 2
+1 1
+1 0 3 2
+STROPPIANA
+Damien
+2
+2 3 0 1
+2 1
+2 3 0 1
+TAMARIN
+Maxime
+3
+3 2 1 0
+3 1
+3 2 1 0
+THIEL
+Maxime
+2
+2 3 0 1
+2 1
+2 3 0 1
+TORRES
+Julien
+1
+1 0 3 2
+1 1
+1 0 3 2
+VINCENT
+Erwan
+2
+2 3 0 1
+2 1
+2 3 0 1
+ZAINA
+Elias
+3
+3 2 1 0
+0 0
+3 2 1 0
+ZOPPI
+Lucie
+2
+2 3 0 1
+2 1
+2 3 0 1

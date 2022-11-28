@@ -1,0 +1,20 @@
+----------------------------------
+Début du vote uninominatif majoritaire en un tour
+
+
+Le vainqueur est : Civilization VI avec 48 points.
+----------------------------------
+Début du vote Methode Borda
+
+
+Le vainqueur est : Civilization VI avec 83.25 points.
+----------------------------------
+Début du vote negativ
+
+Le vainqueur est : Civilization VI avec 48 points.
+----------------------------------
+Début du vote alternatif
+
+Le vainqueur est : Civilization VI avec 59 points.
+
+----------------------------------
