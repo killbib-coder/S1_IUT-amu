@@ -94,8 +94,132 @@ TD2
 	R3 = difference (R1, R2)
 
 
-
-
 Uni-compatible = mm nb d'attribut + attribut respectif comparable
 contrainte clé/ de relation = Au moment d'une nouvelle insertion les clé primaire ne se repète pas 
 contrainte de domaine = Bon format de l'entré par rapport au type
+
+
+########################################################################
+Révision partiel
+########################################################################
+
+A|B Valeurs différentes A et B
+1|2 1
+1|1 2
+3|1 3
+1|1
+5|1 4
+A -> B est vrai que si deux premiers tuples sont égaux
+cardinal = nb éléments
+Nb de valeurs différentes dans les colones
+|R(A)| = R(A,B)
+colone A = colone A et B
+3 valeurs différentes != 4 valeurs différentes 
+Dépendence fonctionnel:
+	Reflexivité:
+	X -> X
+	Augementation:
+	Si X -> Y
+	   X,Z -> Y
+	Union:
+	Si X -> Y et
+	   X -> Z
+	   X -> Y,Z
+	Transitivité:
+	Si X -> Y et
+	   Y -> Z
+	   X -> Z
+	Pseudo-transitivité:
+	Si X -> Y et 
+	   Y,Z -> T
+	   X,Z -> T
+	Décomposition:
+	Si X -> Y,Z
+	   X -> Y
+	   X -> Z
+Clé primaire:
+	R(A,B,C,D,E) F={A->C; B->E; E->B; D->A}
+	Clé candidate:
+		La clé determine tous les élements donc
+		A,B,C,D,E -> A,B,C,D,E
+		Pour chaque élément A,B,C,D,E
+		on va regarder si il est necessaire => Si un élement determine Elem_gauche -> Elem_droite, Elem_droite vire
+	Clé candidates minimal:
+		A,B -> Tous Il faut qu'il n'y est pas le même tuple
+		A,C -> Tous
+		A,D -> Tous
+		A,E -> Tous
+		B,C -> Tous
+		B,D -> Tous Si n'a pas de tuple identique entre les deux = clé primaire
+		B,E -> Tous
+		C,D -> Tous
+		C,E -> Tous
+		D,E -> Tous Si n'a pas de tuple identique entre les deux = clé primaire
+		Clé primaire = soit B,D soit D,E
+	Clé primaire:
+		Est-ce que: A -> A,B,C,D,E |R(A)| ?= Nb tuples
+		Est-ce que: B -> A,B,C,D,E |R(B)| ?= Nb tuples
+		Est-ce que: C -> A,B,C,D,E |R(C)| ?= Nb tuples
+		Est-ce que: D -> A,B,C,D,E |R(D)| ?= Nb tuples
+		Est-ce que: E -> A,B,C,D,E |R(E)| ?= Nb tuples
+Normalisation des relations:
+	1NF: Tous les attributs de R sont mono-valeur (ils ont qu'une valeur)
+	2NF: - R est en 1NF
+		 - Pas de DFs interdites de type 2NF: X(partie de clé primaire) -> A(apartient pas a la clé)
+	3NF: - R est en 2NF
+		 - Pas de DFs interdites de type 3NF: X(n'est pas clé / comporte pas la clé) -> A(appartient pas a a clé)
+	ex: R(A,B,C,D,E) F={A->C; B->E; E->B; D->A}
+		1NF R(D,E ,A,B,C)
+		2NF R1(D,A,C) > D->A,C > R(D,E ,A,B,C) > -(A,C) > R2(D,E,B)
+		3NF R11(A,C) > A->C > R1(D,A,C) > -C > R12(D,A#) 
+		3NF R21(E,B) > E->B > R2(D,E,B) > -B > R22(D#,E#)
+		# étant clé étrangère
+
+
+
+########################################################################
+Exercice Séance 3
+########################################################################
+
+Exo 1:
+Q1: Nb tuples = 5
+	|R(A)|=4  
+	|R(B)|=3
+	|R(C)|=3
+	|R(D)|=3
+	Aucune clé primaire
+Q2: A,B O; A,C X; A,D O; B,C X; B,D O; C,D X
+
+Exo2:
+Q3: NUM_PIECE -> LIBELLE -> CATEGORIE -> TAUX_TVA donc
+	NUM_PIECE -> TAUX_TVA
+Q4: NUM_PIECE -> PRIX, LIBELLE
+Q5: PRIX X; TAUX_TVA X; CATEGORIE X; LIBELLE X donc
+	Clé primaire est NUM_PIECE
+
+Exo3:
+Q6: X: O; Q; B; D
+	V: I S / I D
+Q7: R(B,O,I,S,Q,D) F={S->D; I->B; I,S->Q; B->O; D->S}
+	1NF R(I,S ,B,O,Q,D)
+	2NF R1(I,B,O) > I->B,O > R(I,S ,B,O,Q,D) > -(B,O) > R2(I,S,Q,D)
+	3NF R11(B,O) > B->O > R1(I,B,O) > -O > R12(I,B#)
+	3NF R21(S,D) > S->D > R2(I,S,Q,D) > -D > R22(I#,S#,Q)
+Q8: R11(B,O) R12(I,#b) R21(D,S) R22(I#,D#,Q)
+
+Exo4:
+
+Exo5:
+Q15:R1 1NF
+	R2 2NF
+Q16:R11 2NF
+	R12 3NF
+	R21 3NF
+	R22 3NF
+Q17:
+
+Exo6:
+Q1: Cas 1: PERSONNE(_CODE_,NOM,PRENOM,CAT1,CAT2,CAT3)
+	Cas 2: CATEGORIE(CODE,CAT)
+Q2: VILLE,SURFACE -> COEF
+	
