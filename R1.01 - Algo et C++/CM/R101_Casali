@@ -605,4 +605,14 @@ Explication SAE 2:
 		HTML
 		call graph + called by graphs
 
+Partiel:
+	Spirale de ulame
+	classe pair
+	#include <utilitys>
+	classe map
+	#include <map>
+	key doit être unique
+
+
+
 END
