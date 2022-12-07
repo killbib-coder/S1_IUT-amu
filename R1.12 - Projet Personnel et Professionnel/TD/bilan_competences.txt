@@ -1,0 +1,18 @@
+- Technique(hard skills) => language prog / langues / logiciels autres (canvas, trello, etc...)
+- Humaines(soft skills) => savoir être (autonomie / créativité / esprit d'équipe / etc...)
+- Projets / Expériences
+
+Hard skills:
+	Language prog: Java(4/10), Python(7/10), HTML(8/10), CSS(7/10), JS(4/10), Bash(8/10), SQL(7/10), C(3/10), C++(en cours d'apprentissage)
+	Langues: Francais, Anglais intermédiaire
+	Logiciels autre: FL Studio, Ableton live, Github
+Soft skills:
+	Savoir être: esprit d'équipe, curieux, autodidacte, impliqué, autonome, serieux
+Projets / Expériences:
+	- Configuration serveur web/cloud/jeux https://cloud.killianferrier.fr
+	- Developpement plugin Java https://github.com/killbib-coder/SmallCommand
+	- Developpement appli annuaire
+	- Gestion site web avec nom de domaine https://killianferrier.fr
+	- Participation serveur discord de mise en place de serveurs discord
+	- Travail grande distribution (été 2021)
+	- Stage maintenace informatique (stage de 3ème)
