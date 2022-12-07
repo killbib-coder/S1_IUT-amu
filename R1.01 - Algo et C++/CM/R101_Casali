@@ -573,5 +573,36 @@ On va se demandé si fichOracle == NomDuFichierSortie : diff fichOracle NomDuFic
 Obligation d'avoir les noms dans le fichier entree et vote peuvent être consécutif a la fin du fichier
 
 
+#########################################################################################
+CM13
+#########################################################################################
+
+Explication SAE 2:
+	Soit console soit graphique;
+	Lire fichier de config entré standard (YAML ex: Clé: valeurs);
+	Jeu similaire pacman sans erreurs;
+	Faire des améliorations;
+	Pour fantômes qui suivent pacman regarder A-Star(plus court chemin avec obstacle);
+	Voir M1103 pour rep;
+	Faire un site de docu du code avec l'outil donné (Doxygene);
+	Commentaires Doxygene:
+		/*!
+		  * \file <file>
+		  * \author
+		  * \date
+		  * \brief <desc>
+		  * \version
+		  * \bug
+		  */
+		Dans les fonctions:
+			\fn (fonction name)
+			\param[in/out/inout]
+			\brief
+	Doxygene command:
+		doxywizard &
+		select scan recursively pour aller dans les dossiers
+		all entities + include cross-bidule
+		HTML
+		call graph + called by graphs
 
 END
