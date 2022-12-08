@@ -1,6 +1,7 @@
 Title: Economie durable et numérique
 author: C.Makssoud
 
+
 Dossier1: Enjeux économiques des données de l'informaion
 
 S1: L'impact de numérique sur les relations d'échanges
@@ -74,5 +75,44 @@ S3: Les marchés des données
 			analyser: se servir des données rassemblé et stocké
 
 	III. Opendata
+
+Dossier2: Fondement de l'économie
+
+S1: Les acteurs de l'économie
+	L'activité éco. renvoie a l'activité des agents éco. Ces agents n'ont pas tous la mm activité principale. Il convient donc de les regrouper par grande catég. de fonction qu'ils remplissent dans l'act. éco. 
+
+	I. Le circuit économique 
+		A. Les agents éco.
+			Un agent éco. est un individu, un groupe ou une institution qui va s'orga. pour satisfaire ses besoins. Chaque agent constitue un centre de decision unique et indep. Les decisions prisent par les agents sont de nature éco. (travailler, consommer, produire, ...). Face a la multitude d'agents éco., la contabilité nationnale les classe en grandes catégo. qui regroupent des agents ayant un comportement éco. simil. caractérisé par une mm fonction éco. principale. 
+			- les ménages: un ménage est un indiv. ou un grp d'indiv. vivant habituellement dans un mm logement qu'il est entre eux un lien de parenté ou non et dont la fonction pricipale est la conso. grâce aux revenues primaires (salaire) et aux revenues de transfert (presta. soc.). Il regroupe également les entrepreneurs indiv. (agriculteur, prof. lib., petits commercants, artisants) dont la fonction principale est de produire des biens et des servives.
+			- les entreprises: elles ont comme fonction princ. la prod. de biens et de services marchants non financié. Leurs ressources proviennent de leurs chiffre d'affaire (résultat de la vente). Elles créent de la valeur ajouté qui contribue a la richesse du pays et elles distribuent des salires en contreparti du travail éffectué par les ménages. Somme des valeurs ajoutés des entrep. => PIB. 
+			- les administrations publics: Elles répondent aux besoins d'un int. géné. de la pop. Elles comprennent l'état, la sécu. soc. et les collectivités locales (communes, dep, régions). Elles produisents des biens et des services non-marchant et redistribuent les richesses entre les agents. Leurs ressources proviennent des prélèvements obl. (impôts, taxes).
+			- les sociétés financières: Comprend les banques, les assurences et les organisme de crédit. Les soc. financ. produisent des services financiers et d'assu. Les fonctions princip. d'une banque sont de fournir des moyens de payements, de collecter l'épargne dispo. et d'octroyer des crédits pour financer l'éco.
+			- ISBLSM = les institutions sans but lucra. au service des ménages: regroupe assoc., syndicats, parti pol., lieu de culte, organismes de charités. Leurs fonc. princip. est la prod. de biens et services non-marchants. Leurs ressources pricip. proviennent des dons, des subventions publ., cotisation volontaire.
+			- le reste du monde: les ménages et les entrep. situé a l'étrangé avec lesquels nous échangons. Le reste du monde regroupe les agents éco. non résident qui entretiennent des relations éco. avec des unités résidentes.
+
+		B. Les échanges entre les acteurs éco.
+			Les agents éco. peuvent réal. des opérations quin peuvent être regroup. par nature
+			- les op. sur biens et services qui retrace la provenance des prod. transitant sur le marché et leurs utilisations. 
+			- les op. financiaires qui désignent les op. par lesquels les act. éco. se procure des moyens de finnancements ou alors mettent a dispo. leurs moyens de financements par l'inter. des banques.
+
+		C. Les flux éco.
+			Schma: circuit de base de l'éco. nationale
+					=> Marché <-
+			Ménages  			 Entreprises 
+					-> Marché <=
+			=> flux monétaires/financiers
+			-> flux réels
+
+			Les flux réel sont repr. par l'échange de biens et de services (marchandises, travail)
+			Les flux financiers sont repr. par la contre-partie des flux réel (paiments, salaires)
+
+		D. Le schéma du circuit éco.
+			Il permet de visu. et comprendre les liens éco. entre les acteurs. Les dépenses des uns font les revenues des autres. Les achats de certains permettent a d'autre de vendre leur prod. Il se définit commme la présentation simplifié des enchainements éco. décrivant les grandes opérations réal. par les agents éco.
+			-la prod.
+			-la repartition
+			-la conso.
+			Tout acte éco. d'un agent a donc une conséquence sur un autre agent a un autre endroit du circuit. De plus le circuit est de plus en plus ouvert sur l'exterieur dans le cadre de la mondialisation des échanges.
+
 
 END
