@@ -222,4 +222,25 @@ Exo6:
 Q1: Cas 1: PERSONNE(_CODE_,NOM,PRENOM,CAT1,CAT2,CAT3)
 	Cas 2: CATEGORIE(CODE,CAT)
 Q2: VILLE,SURFACE -> COEF
-	
+
+
+Etape création BD:
+	Cahier des charges --Modèle E/A--> Schéma conceptuel E/A ou Diagramme en E/1
+	--Règles (3) de traduction--> Schéma relationnel en 3NF --Clauses SQL--> Script SQL schéma/donnés
+	--Oracle SQL developer--> SGBD (Système de Gestion de Bases de Données)
+
+TA non-hiérarchique:
+	max=n | attribut spécifique (des 2 côtés)
+Ternaire est focément max=n
+TA hiérarchique:
+	max=1 (1 ou 2 côtés)
+Règles TE/TA regarder memento
+
+Séance 4:
+Q1: a) Num_immat -> puissance, Marque
+	b) Marque -> Pays
+	c) Agence, Marque -> Chiffre_Aff
+	d) Agence !-> Marque, Marque !-> Agence
+Q2: Vehicule - 1,1 - O - 1,n - Marques
+				   avoir
+
