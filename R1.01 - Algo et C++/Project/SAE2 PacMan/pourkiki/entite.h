@@ -4,13 +4,15 @@
 #include "mingl/mingl.h"
 
 namespace entite{
-void dessinePacMan (MinGL &window, const unsigned &x, const unsigned &y);
+    void dessinePacMan (MinGL &window, const unsigned &x, const unsigned &y);
 
-void dessineFantômeMangeable (MinGL &window, unsigned &x, unsigned &y);
+    void dessineFantôme (MinGL &window, const unsigned &x, const unsigned &y, const nsGraphics::RGBAcolor &Couleur);
 
-void dessineFantômeMangeable2 (MinGL &window, unsigned &x, unsigned &y);
+    void dessineFantômeMangeable (MinGL &window, const unsigned &x, const unsigned &y);
 
-void dessineFantôme (MinGL &window, unsigned &x, unsigned &y, const nsGraphics::RGBAcolor &Couleur);
+    void dessineFantômeMangeable2 (MinGL &window, const unsigned &x, const unsigned &y);
+
+    void dessineFantômeMort (MinGL &window, const unsigned &x, const unsigned &y);
 }
 
 

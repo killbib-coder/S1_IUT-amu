@@ -19,7 +19,7 @@ void dessiner(MinGL &window)
 int main()
 {
     // Initialise le système
-    MinGL window("01 - Shapes", nsGraphics::Vec2D(640, 640), nsGraphics::Vec2D(128, 128), nsGraphics::KBlack);
+    MinGL window("PacMan", nsGraphics::Vec2D(1920, 1080), nsGraphics::Vec2D(128, 128), nsGraphics::KBlack);
     window.initGlut();
     window.initGraphic();
 
@@ -38,7 +38,12 @@ int main()
         // On dessine les formes géométriques
         //dessiner(window);
 
-        entite::dessinePacMan(window, 50, 50);
+        entite::dessinePacMan(window, 0, 0);
+        entite::dessineFantôme(window, 300, 0, nsGraphics::KGray);
+        entite::dessineFantômeMangeable(window, 600, 0);
+        entite::dessineFantômeMangeable2(window, 900, 0);
+        entite::dessineFantômeMort(window, 1200, 0);
+
 
         // On finit la frame en cours
         window.finishFrame();
