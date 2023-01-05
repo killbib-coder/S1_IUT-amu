@@ -244,3 +244,59 @@ Q1: a) Num_immat -> puissance, Marque
 Q2: Vehicule - 1,1 - O - 1,n - Marques
 				   avoir
 
+########################################################################
+Intro SQL
+########################################################################
+
+Q01: SELECT * FROM AVION WHERE CAP >= 350 ;
+Q02: SELECT NUMAV, NOMAV FROM AVION WHERE LOC=NICE;
+Q03: select numpil, ville_dep from vol; 
+Q04: select nompil from pilote where adr='Paris' and sal>=3500;
+Q05: select numav, nomav from avion where loc='Nice' or cap<=350;
+Q06: select numvol from vol where ville_dep='Nice' and ville_arr='Paris' and h_dep>=18;
+Q07: select numvol, ville_dep from vol where numpil=100 or numpil=204;
+     select numvol, ville_dep from vol where numpil in (100,204);
+Q08: select count(numvol) from vol where ville_arr='Paris';
+Q09: select count(distinct numpil) from vol where ville_dep='Paris';
+Q10: select avg(sal) from pilote where adr='Marseille';
+
+Q11:Formulation prédicative:
+		select distinct numvol
+		from vol V, pilote
+		where ville_dep='Nice' and adr='Marseille' and V.numpil=pilote.numpil
+	Formulation imbriquée:
+		select numvol 
+		from vol
+		where numpil in (select numpil
+						 from pilote
+						 where adr='Mareseille');
+	Formulation algébrique:
+		select distinct numvol 
+		from vol
+		join pilote
+		on vol.numpil=pilote.numpil
+		where ville_dep='Nice' and adr='Marseille';
+
+Q12: select numvol, ville_dep, ville_arr
+	 from vol, avion
+	 where loc!='Nice' and vol.numav=avion.numav;
+
+Q13: select numpil
+	 from pilote, vol
+	 where pilote.numpil not in vol.numpil and pilote.numpil=vol.numpil;
+
+Q14: select numpil, nompil
+	 from pilote, vol, avion
+	 where ville_dep='Nice' and cap>=300 and pilote.numpil=vol.numpil and vol.numav=avion.numav;
+
+Q15: select nompil
+	 from pilote, vol, avion
+	 where adr='Paris' and ville_dep='Nice' and nomav='Airbus' and vol.numpil=pilote.numpil and vol.numav=avion.numav
+
+Q16: select numvol
+	 from vol, pilote, avion
+	 where adr='Nice' and (ville_dep='Nice' or ville_arr='Nice') and loc='Paris' and vol.numpil=pilote.numpil and vol.numav=avion.numav
+
+Q17: select numpil, nompil
+	 from pilote P1, pilote P2 
+	 where P1.nompil='Dupont' and P1.adr=P2.adr   
