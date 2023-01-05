@@ -13,6 +13,10 @@ namespace entities{
     void drawEatableGhost2(MinGL &window, const unsigned &x, const unsigned &y);
 
     void drawDeadGhost(MinGL &window, const unsigned &x, const unsigned &y);
+
+    void drawBall(MinGL &window, const unsigned &x, const unsigned &y);
+
+    void drawBigBall(MinGL &window, const unsigned &x, const unsigned &y);
 }
 
 #endif // ENTITIES_H

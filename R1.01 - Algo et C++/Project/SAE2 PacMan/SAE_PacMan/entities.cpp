@@ -25,8 +25,8 @@ void entities::drawGhost (MinGL &window, const unsigned &x, const unsigned &y, c
     window << nsShape::Triangle(nsGraphics::Vec2D(x+35,y+50), nsGraphics::Vec2D(x+45, y+60), nsGraphics::Vec2D(x+45,y+50), Couleur);
     window << nsShape::Circle(nsGraphics::Vec2D(x+33,y+25),5,nsGraphics::KWhite);
     window << nsShape::Circle(nsGraphics::Vec2D(x+18,y+25),5,nsGraphics::KWhite);
-    window << nsShape::Circle(nsGraphics::Vec2D(x+33,y+25),2,nsGraphics::KCyan);
-    window << nsShape::Circle(nsGraphics::Vec2D(x+18,y+25),2,nsGraphics::KCyan);
+    window << nsShape::Circle(nsGraphics::Vec2D(x+33,y+25),2,nsGraphics::KBlack);
+    window << nsShape::Circle(nsGraphics::Vec2D(x+18,y+25),2,nsGraphics::KBlack);
 }
 
 void entities::drawEatableGhost (MinGL &window, const unsigned &x, const unsigned &y){
@@ -53,6 +53,14 @@ void entities::drawEatableGhost2 (MinGL &window, const unsigned &x, const unsign
 void entities::drawDeadGhost (MinGL &window, const unsigned &x, const unsigned &y){
     window << nsShape::Circle(nsGraphics::Vec2D(x+33,y+25),5,nsGraphics::KWhite);
     window << nsShape::Circle(nsGraphics::Vec2D(x+18,y+25),5,nsGraphics::KWhite);
-    window << nsShape::Circle(nsGraphics::Vec2D(x+33,y+25),2,nsGraphics::KCyan);
-    window << nsShape::Circle(nsGraphics::Vec2D(x+18,y+25),2,nsGraphics::KCyan);
+    window << nsShape::Circle(nsGraphics::Vec2D(x+33,y+25),2,nsGraphics::KBlack);
+    window << nsShape::Circle(nsGraphics::Vec2D(x+18,y+25),2,nsGraphics::KBlack);
+}
+
+void entities::drawBall(MinGL &window, const unsigned &x, const unsigned &y){
+    window << nsShape::Circle(nsGraphics::Vec2D(x+30, y+30), 5, nsGraphics::KYellow);
+}
+
+void entities::drawBigBall(MinGL &window, const unsigned &x, const unsigned &y){
+    window << nsShape::Circle(nsGraphics::Vec2D(x+30, y+30), 10, nsGraphics::KYellow);
 }
