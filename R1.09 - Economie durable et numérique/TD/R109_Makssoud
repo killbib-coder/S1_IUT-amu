@@ -204,8 +204,32 @@ S3: croissance et déséquilibre économique
 		Somme VA = PIB
 		La VA devra permettre de rémunerer les facteurs de prod. ( travail et capital ) qui sont a l'origine de la création de cette richesse. Le calcule de la VA est facile a réal. dans le cas d'une prod. marchande = qui s'échange sur un marché a un prix qui couvre au moins 50% de son coût de prod. Mais ce calcule est plus difficile dans le cas d'une prod. non-marchande. On adopte une autre mesure qui consiste a calculer a diff entre les dépense de prod. moyen de prod. et coup intermédiaire. 
 	
-	II. le PIB
+	II. Le PIB
 		L'ativité éco. se mesure a partir d'indicateurs tel que le PIB considéré comme l'indicateur pricipal. Il mesure la richesse créer par un pays sur une periode donnée. Il engage les prod. marchandes et les prod. non-marchande. Il est défini comme étant le somme des valeurs ajoutées réal. a l'interieur d'un pays par l'ensemble des branches pour une periode donnée et quelque soit la nationnalité dans entrep. implémenté dans le pays. Le PIB est utilisé pour mesurer la croissance éco. d'un grp de pays, d'un pays, d'une région. On calcule alors l'evo. entre 2 années. Sa variation permet de calcule le taux de croissance. Et le PIB par habitants est souvent retenue pour éffcectuer des comparaison entre les pays.
+
+	III. Les limites du PIB 
+	 	Mm si le PIB par habitant donne un éclairage intéressant sur le niveau de richesse d'un pays. Le PIB reste un indicateur incomplet. Il a été créé en 1934 pour mesurer l'effet de la grande dépréssion sur l'éco. et il apparait en France en 1946. Dès 1974, un économiste américain a montré que la richesse d'un pays mesuré par le PIB n'était pas le reflet du niveau de bien-être de ses habitants. Le paradoxe montré est que le niv. de bien-être s'améliore significativement lorsque le PIB par habitant passe d'un niveau faible a un niveau moyen mais que la progression du PIB a des niveaux plus élevés n'améliore pas toujours le bien-être voir le déteriore. Certains pays très riche ont donc un niveau de bien-être inferieur a ceux d'autres pays moins riche illustrant l'expréssion selon laquelle l'argent ne fait pas le bonheur.
+	 	Le PIB prend en compte des activités aux conséquence nuisible pour l'homme, dégradation de l'env., épuisement des ressoures nat., accident de la route. Mas ce calcule n'intègre pas:
+	 		- les dégâts causé a l'env.
+	 		- les richesses nat. ou leurs épuisements
+	 		- l'impact d'une catastrophe nat., d'une guerre
+	 		- les act. non rémunéré comme le travail domestique / bénévolat
+	 		- les activités rémunéré mais non déclaré (act. illégales, travaill au black)
+	 		- le niveau de dev. d'un pays
+
+	IV. Les indicateurs complémentaires
+		Pour l'ensemble de ces raisons, certains pays et organisme internat. ont dev. complémentaire au PIB qui insiste d'avantage sur des aspects qualitatifs et pas uniquement éco.
+
+		A/ L'IDH
+			L'IDH a été créé par la programme des nations unis pour le dev. en 1990 afin de proposer une vision plus fine et qualitative de la situation d'un pays que celle fournit par le PIB. C'est un indicateur qui fait la synthèse de 3 series de données: L'éspérence de vie a la naissance, niveau d'instruction mesuré par la durée moyenne de scolarisation et la durée attendu de la scolérisation, niveau de vie calculé en parité de pouvoir d'achat cad. un montant assurant le mm pouvoir dans tous les pays. L'IDH se présente comme un nombre sans unité compris entre 0 et 1, plus le niveau se rapproche de 1 plus le niveau de dev. est élevé. C'est un classement annuel des pays. Ce qui compte le plus dans l'IDH ce n'est pas le niveau absolut mais le rang du pays dans le classement mondial
+		
+		B/ Le HPI (happy planet index)
+			L'HPI propose pour sa part de combiner 4 indicateurs: (l'emprinte écologique, l'espérence de vie, degrès de bien être, inégalités de revenue) pour classer les pays entre eux avec un indicateur dont la valeur varie entre 0 et 100. Cet indicateur engendre un classement très différent de celui qui serait obtenue avec le PIB. En privilégiant des aspect qualitatif, cet indicateur place en tête des petit pays ou la qualité de vie est bonne alors que l'on retrouve beaucoup plus loin dans le classement les grandes puissances économique mondiale.
+
+		Conclusion
+			Et si on remplacait le PIB par le BNB(Bonheur Nationnal Brut) c'est ce qu'a fait en 1972 le Bhoutan (800000 habitants) 72 critères de mesure ont été mit en place. Le BNB s'appuie sur 4 grands principes: croissance et dev. éco., conservation de la culture, sauvegarde de l'env. et gouvernance responsable
+
+
 		
 
 END
