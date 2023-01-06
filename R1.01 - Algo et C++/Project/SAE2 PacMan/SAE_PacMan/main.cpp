@@ -15,7 +15,7 @@ using namespace std;
 int main()
 {
     // Initialise le système
-    MinGL window("PacMan", nsGraphics::Vec2D(1920, 1080), nsGraphics::Vec2D(128, 128), nsGraphics::KBlack);
+    MinGL window("PacMan", nsGraphics::Vec2D(1200, 1080), nsGraphics::Vec2D(128, 128), nsGraphics::KBlack);
     window.initGlut();
     window.initGraphic();
 
