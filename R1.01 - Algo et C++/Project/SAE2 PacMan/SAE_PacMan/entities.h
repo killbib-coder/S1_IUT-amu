@@ -3,7 +3,7 @@
 
 #include "mingl/mingl.h"
 
-namespace entities{
+namespace entities{ // Initialisation de dessin des entittés
     void drawPacmanOpen(MinGL &window, const unsigned &x, const unsigned &y);
 
     void drawPacmanClosed(MinGL &window, const unsigned &x, const unsigned &y);
@@ -19,11 +19,9 @@ namespace entities{
     void drawBall(MinGL &window, const unsigned &x, const unsigned &y);
 
     void drawBigBall(MinGL &window, const unsigned &x, const unsigned &y);
-
-
 }
 
-class Pacman {
+class Pacman { // Initialisation de l'objet Pacman
     private:
         unsigned speed = 5 ;
         unsigned x ;
@@ -41,8 +39,7 @@ class Pacman {
         void mooveToDown() ;
 };
 
-class Ghost
-{
+class Ghost { // Initialisation de l'objet Fantôme
     private:
         unsigned x=0;
         unsigned y=0;
@@ -53,10 +50,10 @@ class Ghost
         void setY(unsigned n);
         unsigned getX();
         unsigned getY();
-        void moveUp();
-        void moveDown();
-        void moveLeft();
-        void moveRight();
+        void moveToUp();
+        void moveToDown();
+        void moveToLeft();
+        void moveToRight();
         void isEated();
 };
 

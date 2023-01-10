@@ -5,12 +5,27 @@
 
 #include "mingl/mingl.h"
 
-
-//#include "entities.h"
+#include "entities.h"
 #include "map.h"
 
 using namespace std;
 
+Pacman PacMan;
+
+void mouvment(MinGL &window){ // Fonction pour déplacer Pacman
+    if(window.isPressed({GLUT_KEY_LEFT, true})){
+        PacMan.mooveToLeft();
+    }
+    else if(window.isPressed({GLUT_KEY_RIGHT, true})){
+        PacMan.mooveToRight();
+    }
+    else if(window.isPressed({GLUT_KEY_UP, true})){
+        PacMan.mooveToUp();
+    }
+    else if(window.isPressed({GLUT_KEY_DOWN, true})){
+        PacMan.mooveToDown();
+    }
+}
 
 int main()
 {
@@ -31,15 +46,11 @@ int main()
         // On efface la fenêtre
         window.clearScreen();
 
-        // On dessine les formes géométriques
+        // On dessine la map
         environment::intiMap(window);
 
-//        entities::drawPacman(window, 0, 0);
-//        entities::drawGhost(window, 300, 0, nsGraphics::KGray);
-//        entities::drawEatableGhost(window, 600, 0);
-//        entities::drawEatableGhost2(window, 900, 0);
-//        entities::drawDeadGhost(window, 1200, 0);
-
+        // On récupère les entrées claviers
+        mouvment(window);
 
         // On finit la frame en cours
         window.finishFrame();

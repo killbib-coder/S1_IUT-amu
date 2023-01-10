@@ -24,7 +24,6 @@ void entities::drawPacmanClosed (MinGL &window, const unsigned &x, const unsigne
 void Pacman::showPacman(MinGL &window){
     if (Pacman::spriteId == 1 ) entities::drawPacmanOpen(window, Pacman::getX(), Pacman::getY());
     else if (Pacman::spriteId == 2 ) entities::drawPacmanClosed(window, Pacman::getX(), Pacman::getY());
-
 }
 void Pacman::setX(unsigned n) {  // Method/function defined inside the class
     Pacman::x = n;
@@ -33,22 +32,22 @@ void Pacman::setY(unsigned n) {  // Method/function defined inside the class
     Pacman::y = n;
 }
 unsigned Pacman::getX() {  // Method/function defined inside the class
-  return x;
+    return x;
 }
 unsigned Pacman::getY() {  // Method/function defined inside the class
     return y;
 }
 void Pacman::mooveToLeft() {  // Method/function defined inside the class
-  cout << "left";
+    cout << "left";
 }
 void Pacman::mooveToRight() {  // Method/function defined inside the class
-  cout << "right";
+    cout << "right";
 }
 void Pacman::mooveToUp() {  // Method/function defined inside the class
-  cout << "up";
+    cout << "up";
 }
 void Pacman::mooveToDown() {  // Method/function defined inside the class
-  cout << "down";
+    cout << "down";
 }
 
 // Ghost
@@ -88,7 +87,7 @@ void entities::drawDeadGhost (MinGL &window, const unsigned &x, const unsigned &
     window << nsShape::Circle(nsGraphics::Vec2D(x+33,y+25),2,nsGraphics::KBlack);
     window << nsShape::Circle(nsGraphics::Vec2D(x+18,y+25),2,nsGraphics::KBlack);
 }
-void Ghost::draw(MinGL &window, const nsGraphics::RGBAcolor &Couleur){
+void Ghost::draw(MinGL &window, const nsGraphics::RGBAcolor &Couleur){ // Fonction pour dessiner le fantôme en fonction de son statut (spiteId)
     switch (Ghost::spriteId) {
     case 1:
         entities::drawGhost(window, Ghost::x, Ghost::y, Couleur);
@@ -119,16 +118,16 @@ unsigned Ghost::getX(){
 unsigned Ghost::getY(){
     return Ghost::y;
 }
-void Ghost::moveRight(){
+void Ghost::moveToRight(){
     Ghost::x+=1;
 }
-void Ghost::moveLeft(){
+void Ghost::moveToLeft(){
     Ghost::x-=1;
 }
-void Ghost::moveUp(){
+void Ghost::moveToUp(){
     Ghost::y-=1;
 }
-void Ghost::moveDown(){
+void Ghost::moveToDown(){
     Ghost::y+=1;
 }
 void Ghost::isEated(){
